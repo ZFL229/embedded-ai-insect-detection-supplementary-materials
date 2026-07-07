@@ -1,0 +1,1751 @@
+[LOG] Session log: C:\Users\linzh\Desktop\Final_Project\Communication_module\session_logs\pc_uart_ai_session_20260605_151922.log
+[PC] Python executable: C:\Users\linzh\yolo_mvp\venv\Scripts\python.exe
+[PC] argv: ['.\\Communication_module\\pc_ai_uart_service_version2.py']
+[TCP_INJECT] listening on 127.0.0.1:9001[PC] TCP injection enabled: 127.0.0.1:9001
+
+[AI] importing modules... please wait
+[AI] import finished in 6.8s
+[AI] loading model... please wait
+[TCP_INJECT] connected: 127.0.0.1:64956
+[TCP_INJECT] buffered raw bytes=205
+[AI] loaded model in 0.1s: C:\Users\linzh\Desktop\Final_Project\runs_mvp\insect_det_v7_mvp3\weights\best.pt
+[PC] Auto selected serial port: COM9
+[PC] Opened COM9 @ 115200
+[PC] Save dir: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT][HANDSHAKE] mixed bytes=205
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3317, buffer=3340
+[PC] IMAGE COMPLETE: img_id=1, chunks=145, bytes=36876
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=1 pc_received_len=36876 saved_file_size=DISABLED
+[AI] enqueued img_id=1, bytes=36876[AI] start img_id=1, bytes=36876
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+207 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=1 -> YES conf=0.63 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=1, result=YES, conf=0.63
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.63, last_img_id=1, cache_img_id=1)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=142
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT][HANDSHAKE] mixed bytes=182
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=2656, buffer=2679
+[PC] IMAGE COMPLETE: img_id=2, chunks=142, bytes=36278
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=2 pc_received_len=36278 saved_file_size=DISABLED
+[AI] enqueued img_id=2, bytes=36278[AI] start img_id=2, bytes=36278
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=1 -> TX b'\xaaU\x01\x02\x01\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.63, last_img_id=2, cache_img_id=1)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+208 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=2 -> YES conf=0.60 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=2, result=YES, conf=0.60
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x01\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=1 -> TX b'\xaaU\x01\x02\x01\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.60, last_img_id=2, cache_img_id=2)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=38
+[TCP_INJECT] buffered raw bytes=184
+[TCP_INJECT] buffered raw bytes=45
+[TCP_INJECT][HANDSHAKE] mixed bytes=267
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3152, buffer=3175
+[PC] IMAGE COMPLETE: img_id=3, chunks=144, bytes=36732
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=3 pc_received_len=36732 saved_file_size=DISABLED
+[AI] enqueued img_id=3, bytes=36732[AI] start img_id=3, bytes=36732
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=2 -> TX b'\xaaU\x01\x02\x02\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.60, last_img_id=3, cache_img_id=2)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+209 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=3 -> YES conf=0.63 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=3, result=YES, conf=0.63
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x02\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=2 -> TX b'\xaaU\x01\x02\x02\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.63, last_img_id=3, cache_img_id=3)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=30
+[TCP_INJECT] buffered raw bytes=132
+[TCP_INJECT] buffered raw bytes=66
+[TCP_INJECT][HANDSHAKE] mixed bytes=228
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3367, buffer=3390
+[PC] IMAGE COMPLETE: img_id=4, chunks=145, bytes=36926
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=4 pc_received_len=36926 saved_file_size=DISABLED
+[AI] enqueued img_id=4, bytes=36926[AI] start img_id=4, bytes=36926
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=3 -> TX b'\xaaU\x01\x02\x03\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.63, last_img_id=4, cache_img_id=3)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+210 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=4 -> YES conf=0.61 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=4, result=YES, conf=0.61
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x03\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=3 -> TX b'\xaaU\x01\x02\x03\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.61, last_img_id=4, cache_img_id=4)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=126
+[TCP_INJECT] buffered raw bytes=102
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT][HANDSHAKE] mixed bytes=284
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=189
+[TCP_INJECT][RX] mixed bytes=217
+[PC] RX bytes=4096, buffer=4237
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=4393
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=3259, buffer=7570
+[PC] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] IGNORE frame.type=0x7E, seq=39601
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=17, buffer=7429
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] RX REQ seq=4 -> TX b'\xaaU\x01\x02\x04\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.61, last_img_id=4, cache_img_id=4)
+[PC] RX REQ seq=4 -> TX b'\xaaU\x01\x02\x04\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.61, last_img_id=4, cache_img_id=4)
+[PC] RX bytes=9, buffer=9
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] RX bytes=46, buffer=46
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] timeout drop img_id=[5]
+[PC] SESSION ABORT: image assembly timeout img_id=[5]
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=17
+[TCP_INJECT] buffered raw bytes=156
+[TCP_INJECT][HANDSHAKE] mixed bytes=173
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3615, buffer=3638
+[PC] IMAGE COMPLETE: img_id=5, chunks=146, bytes=37153
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=5 pc_received_len=37153 saved_file_size=DISABLED
+[AI] enqueued img_id=5, bytes=37153[AI] start img_id=5, bytes=37153
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=5 -> TX b'\xaaU\x01\x02\x05\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.61, last_img_id=5, cache_img_id=4)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+211 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=5 -> YES conf=0.53 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=5, result=YES, conf=0.53
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x05\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=5 -> TX b'\xaaU\x01\x02\x05\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.53, last_img_id=5, cache_img_id=5)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=139
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT][HANDSHAKE] mixed bytes=195
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3479, buffer=3502
+[PC] IMAGE COMPLETE: img_id=6, chunks=145, bytes=37038
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=6 pc_received_len=37038 saved_file_size=DISABLED
+[AI] enqueued img_id=6, bytes=37038[AI] start img_id=6, bytes=37038
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=6 -> TX b'\xaaU\x01\x02\x06\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.53, last_img_id=6, cache_img_id=5)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+212 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=6 -> YES conf=0.58 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=6, result=YES, conf=0.58
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x06\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=6 -> TX b'\xaaU\x01\x02\x06\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=6, cache_img_id=6)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=95
+[TCP_INJECT] buffered raw bytes=130
+[TCP_INJECT][HANDSHAKE] mixed bytes=253
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3554, buffer=3577
+[PC] IMAGE COMPLETE: img_id=7, chunks=145, bytes=37113
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=7 pc_received_len=37113 saved_file_size=DISABLED
+[AI] enqueued img_id=7, bytes=37113[AI] start img_id=7, bytes=37113
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=7 -> TX b'\xaaU\x01\x02\x07\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.58, last_img_id=7, cache_img_id=6)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+213 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=7 -> YES conf=0.64 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=7, result=YES, conf=0.64
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x07\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=7 -> TX b'\xaaU\x01\x02\x07\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.64, last_img_id=7, cache_img_id=7)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=20
+[TCP_INJECT] buffered raw bytes=142
+[TCP_INJECT] buffered raw bytes=71
+[TCP_INJECT][HANDSHAKE] mixed bytes=233
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=156
+[TCP_INJECT] buffered raw bytes=29
+[TCP_INJECT] buffered raw bytes=17
+[TCP_INJECT] buffered raw bytes=64
+[TCP_INJECT][RX] mixed bytes=294
+[PC] RX bytes=4096, buffer=4178
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=3543, buffer=3858
+[PC] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] SESSION ABORT: image frame handling failed: ValueError: invalid chunk_seq/chunk_total: seq=5, total=2
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaaTX_DONE\r\n'
+[PC] HANDSHAKE RX: b'[TRANSFER_FAILED] img_id=8 capture_len=37102\r\n'
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=143
+[TCP_INJECT] buffered raw bytes=54
+[TCP_INJECT][HANDSHAKE] mixed bytes=225
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3561, buffer=3584
+[PC] IMAGE COMPLETE: img_id=8, chunks=145, bytes=37120
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=8 pc_received_len=37120 saved_file_size=DISABLED
+[AI] enqueued img_id=8, bytes=37120[AI] start img_id=8, bytes=37120
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=9 -> TX b'\xaaU\x01\x02\t\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.64, last_img_id=8, cache_img_id=7)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+214 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=8 -> YES conf=0.57 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=8, result=YES, conf=0.57
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\t\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=9 -> TX b'\xaaU\x01\x02\t\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.57, last_img_id=8, cache_img_id=8)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=118
+[TCP_INJECT] buffered raw bytes=56
+[TCP_INJECT] buffered raw bytes=40
+[TCP_INJECT][HANDSHAKE] mixed bytes=226
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3510, buffer=3533
+[PC] IMAGE COMPLETE: img_id=9, chunks=145, bytes=37069
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=9 pc_received_len=37069 saved_file_size=DISABLED
+[AI] enqueued img_id=9, bytes=37069[AI] start img_id=9, bytes=37069
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=10 -> TX b'\xaaU\x01\x02\n\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.57, last_img_id=9, cache_img_id=8)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+215 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=9 -> YES conf=0.59 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=9, result=YES, conf=0.59
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\n\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=10 -> TX b'\xaaU\x01\x02\n\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=9, cache_img_id=9)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=297
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT][HANDSHAKE] mixed bytes=353
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3447, buffer=3470
+[PC] IMAGE COMPLETE: img_id=10, chunks=145, bytes=37004
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=10 pc_received_len=37004 saved_file_size=DISABLED
+[AI] enqueued img_id=10, bytes=37004[AI] start img_id=10, bytes=37004
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=11 -> TX b'\xaaU\x01\x02\x0b\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.59, last_img_id=10, cache_img_id=9)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+216 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=10 -> YES conf=0.59 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=10, result=YES, conf=0.59
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x0b\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=11 -> TX b'\xaaU\x01\x02\x0b\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=10, cache_img_id=10)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=102
+[TCP_INJECT] buffered raw bytes=66
+[TCP_INJECT][HANDSHAKE] mixed bytes=180
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=159
+[TCP_INJECT] buffered raw bytes=92
+[TCP_INJECT][RX] mixed bytes=263
+[PC] RX bytes=4096, buffer=4296
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=4498
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] RX bytes=4096, buffer=8453
+[PC] SESSION ABORT: image frame handling failed: ValueError: invalid chunk_seq/chunk_total: seq=5, total=2
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b"\x06\x18\xa7P\xc0r\xaej\xca[1\x1d)\x88F\xb5\x7fJ\x84\xc4\xcb\xd4P1\xa6\x92\x90\n+KN\\\xb507c\x1cT\x98\xa4\x01F)\x00\xdd\x82\x8f(P\x04Ml\xa6\xab\xcbd\xa4t\xa0\x0ck\x98<\xb7\xc5W\xc5P\x0bK\x9a\x04\x04\xd3\r\x03\n\xb9\xa7g\xcd\xe2\x90\x1d\x1c]*Z\x00ZZ\x00*'\xa4\x03)h\x00\xa5\xa0\x02\x96\x80\nZ\x00))\x80RR\x00\xa2\x80\nJ\x00(\xa6\x01E\x00\x14P\x01E\x00"
+[PC] HANDSHAKE RX: b'\x14R\x00\xa2\x98\x05%\x00\x14R\x01(\xa6\x02QL\x02\x8a@%%\x00%-\x00%\x14\x00\x94P\x01I@\x05\x14\x00Q@\tE\x00-%\x00\x14P\x01E 9\x0c\xd4u@\x14\xb4\x00S)\x00Q@\xc2\x9dLB\xadkY:\xc42i\x81$\xfa\x8f\xf7k:I\xdeF\xa0\t\xe3\x12H*\xccV\x9f\xde\xa4\x05\xc5\x88\n\x97m\x02\x1d\x8ap\xa0\x05\x14\xb4\x00\xb4\xea}G\xbd\xf5U\xaa\xaaU\x01\x03\x86\x00\x05\x01\x00\x00\x0b'
+[PC] HANDSHAKE RX: b'\x86\x00\x91\x00\x06--\x02\x16\x8a\x00(\xa40\xa7b\x98\x05%\x00\x14\xb4\x00Q@\x87\nSHbQ@\x0e\xa4\xa6\x01E \n\x8ad\xdd@\x0b\x04{\x05I@\x82\x96\x81\x85\x14\x00Q@\tI@\x82\x93\x14\xc6\x18\xaa\xf2\xc2\r!\x19\xd2\xc1\xb1\xf7\x01V\xad\xa6\xca\xed4\x00\xcb\xdbQ"\xd6\x0c\xd1\x18\xda\x81\x91R\xd0!i\xe3\x9a\x06]\xb4\xb7/Z\xf0\xc0\x02\xd0"_$TrZ\x06\xedH\nSi\xc3\xb5R\x96\xc9\xd7'
+[PC] HANDSHAKE RX: b'\xa51\x91yL\x0f"\xb64\xc5\xe2\x805E:\x90\x0bE\x00\x14P\x02R\x11@\x19z\x94<f\xb1q\x8a\xa0\n(\x00\xa6\x9a\x00\x9a5\x1bj\xe6\x98\xa3~{\xd2\x11\xb8\x95 \xa0c\xa9h\x01*\x16\xa0\x06\xd2\xd2\x18\xb4P!h\xa0\x05\xa2\x80\n(\x00\xa4\xa0\x02\x92\x80\n)\x80Q@\x05\x14\x80(\xa6\x01E\x00\x14P\x01E\x00%\x14\x00RP\x01E\x00\x14\x94\x00\x94P\x01I@\x05\x14\x00\x94P\x02Q@\x05%\x03\n'
+[PC] HANDSHAKE RX: b'(\x10Q@\x0e\xe9`\xe2U\xaa\xaaU\x01\x03\x87\x00\x05\x01\x00\x00\x0b\x87\x00\x91\x00\x05%0\n)\x00Q@\x05\x14\x80\xe33IL\x02\x81@\xc5&\x9bL\x06\xd2\xd2\x01E:\x80\x13\xa5L\xbb\xdb\xa5\x02,Gj\xcfW\xe1\xb2\x0b\xd6\x80-, T\xa1i\x88v)\xd4\x0c)\xd4\x08Z(\x01\xd4\xe1@\x05%\x00(\xa5\xa40\xa5\xa6\x01E\x02\x12\x96\x80\n)\x0cZ)\x88p\xa2\x80\nZ@\x14P0\xa2\x80\n(\x01E%'
+[PC] HANDSHAKE RX: b'\x02\n(\x18Q@\x82\x8a\x06\x14\x94\xc4\x14R\x013M4\x0c\x82T\xddU|\xad\xa7\x8a\x04L\xb2\xf1\xf3VN\xa5\x86n)\x8c\xce\xa5\x14\x00\xfd\xb5f\xda\x12\xed@\x8d\xdbxv-Y\x14\x86<Q@\x08V\xa3h\x81\xa4\x04Mj\r:(\xb6P"\xc04\xec\xd01h\xa0\x034P\x01Hh\x03?P\x7f\x96\xb1\x1f\xadP\x0c\xa2\x80\x1bA\xa4\x02\x86\xc5Z\xb1\x90\xf9\x98\xa0GC\t\xe2\xa6\x14\x80Z)\x8cCQ5\x006'
+[PC] HANDSHAKE RX: b'\x96\x80\x1dE \x16\x8a\x00Z(\x00\xa2\x80\x12\x8a`%\x14\x80(\xa6\x01I@\x05 \t:\x16U\xaa\xaaU\x01\x03\x88\x00\x05\x01\x00\x00\x0b\x88\x00\x91\x00- \n(\x00\xa2\x80\n(\x00\xa4\xa6\x01E0\x12\x8aB\nJ\x06\x14P\x02QLBQHaI@\x05%\x00-%\x00%\x14\x00Q@\x05\x14\x80JZc\nJB\nJ`-\x14\x80\xe2\xcd&)\x8cJni\x00f\x96\x98\x05\x14\x08p\xe6\xa5X\xcbS\x02\xd46'
+[PC] HANDSHAKE RX: b',\xddkB\x1b%^\xd4\x01m#\xc5H\x16\x80\x1dF(\x10\xeaZ@\x14\xb4\x0c(\xa0C\xa9i\x8c(\xa0\x05\xa5\xa0\x02\x9d\x9a\x00JJ\x00(\xa0\x02\x96\x90\x05-\x00(\xa54\xc4%-\x00\x19\xa2\x81\x89KH\x05\xa2\x81\x0e\xa6\xd3\x00\xa2\x81\x85\x14\x80(\xa6\x01IH\x02\x8a`%%\x02\x1ai\xa5)\x0c\xab4f\xb1n\x94\xee\xa0ECRD9\xa63V+PV\xac[C\xe5\xb5!\x1a)\x82)\xc6\x81\x8bJ\r \x1d'
+[PC] HANDSHAKE RX: b'I@\x06)(\x00\xa2\x80\x1aMBn\x82\xd3\x00[\xb5=\xea_=}h\x01\xdep\xa8e\xb9\n:\xd0\x06=\xec\xfb\xda\xa9\xe6\xa8\x02\x92\xa4\x06\xd1L\x9bb6\x11U\xaa\xaaU\x01\x03\x89\x00\x05\x01\x00\x00\x0b\x89\x00\x91\x00\x06\xd5\x9b7\xd8\xf9\xa0\x0e\x8e\x07\xca\xd4\xc2\x90\x0e\xa2\x80\x1aMFh\x01)h\x01ii\x00R\xd0\x02\xd2P\x01E\x00\x14\x94\x00Q@\x05\x14\x00\x94P\x02\xd1L\x02\x8a\x04\x14P\x01E\x03\nJ\x04\x14'
+[PC] HANDSHAKE RX: b'\x94\x0c(\xa0\x04\xa2\x80\nJ\x00)(\x00\xa2\x90\x05%0\x12\x96\x81\x89ILAE \n(\x00\xa2\x80\nJ\x06\x14P \xa2\x90\x05\x14\xc0\xe3(4\x01\x19\xa6\xd0\x01N\xc5\x03\x17njT\xb6f\xed@\x1a\x10i\xdf\xde\xad\x08\xed\x15(\x11ab\xc5<\nb\x1d\x8a\\P0\xa2\x81\x0bK@\x05\x14\x00R\xd3\x01\xd4\xb4\x86\x14P\x02\xd1@\x0bI@\x05\x14\x84\x14\x94\x0cZZ`\x14P\x02\x8aS@\x05:\x80\x1bE\x00\x14'
+[PC] HANDSHAKE RX: b'\xb4\x00Q@\x0bE \n(\x10QL\x02\x8aC\x12\x8a\x00(\xa0\x04\xa2\x80\x12\x8a`5\xd7"\xa9\xcfm\xbcR\x11\x8dqh\xd1\x9fjm\xb2\xfe\xf0\x03@\x1b\xf1(\xdbO\xd9@\xc4\x04\xadXG\xcd\x00>\x92\x80\x16\x974K[\xd7\xdcU\xaa\xaaU\x01\x03\x8a\x00\x05\x01\x00\x00\x0b\x8a\x00\x91\x00\x00\xb4P\x02R\x1a@A;mZ\xc2\xb8\x98\xef\xebL\x08Vv\x1d\xeaQv\xfe\xb4\xc0\x7f\xdb\x1a\xa3{\x82\xd4\x01\x11jm!\x05'
+[PC] HANDSHAKE RX: b'%\x00\x14\xdc\xd01)\xc8y\xa6\x07K`s\x15\\\x14\x84:\x92\x98\xc652\x90\x05- \x16\x96\x80\n)\x80\xb4P\x01I@\x05\x14\x80(\xa6\x02Q@\x05%\x00--\x00\x14P\x01E\x00\x14\x94\x00Q@\x05%\x00\x14\x94\xc0(\xa4\x01I@\x05%\x03\nJ\x04\x14P\x02Q@\x05\x14\x00\x94P\x01E\x00\x14P\x02Q@\xc2\x8a\x04\x14P\x01K@\x1ca\xa6\x9a\x00JM\xa6\x80$H\x19\xbbU\xb8\xf4\xf6=h\x02\xecv'
+[PC] HANDSHAKE RX: b'\x00u\xab\x91[\xaat\x14\x01`%?m1\x0b\x8a1H\x05\xa2\x98\xc6\xd2\xd2\x10\xb4S\x00\xa2\x80\x16\x96\x80\x16\x8ac\nZ@\x14\xb9\xa0BQ@\x0bI@\xc34P\x02\xd1H\x02\x96\x98\x0bFh\x00\x14\xa6\x90\x82\x8ac\n(\x10Q@\xc5\xa5\x14\x84\x06\x92\x98\xc2\x96\x90\tE0\x16\x92\x80\x91\x92}}U\xaa\xaaU\x01\x03\x8b\x00\x05\x01\x00\x00\x0b\x8b\x00\x91\x00\n(\x10\x94\x94\x80)i\x8c)\xa4P\x05y\xe0\x0f\xda\xb2\xe5'
+[PC] HANDSHAKE RX: b'\xb61\xbeV\x90\x8bv\xb7\x1f\xc2\xd5|\x1a\x06!\xc1\xa8\xb3\xb4\xd3\x02T\x9a\xa6\x1c\xd2\x01i\xa7\x8a\x00\x8c\xcd\x8a\x05\xc04\xec\x04\x82AH\xd2\x81H\x0c\xeb\xdb\x91\xb7\x02\xb1\x9f\x93L\x06\xd1@\x0bK@\x05%\x03\x03M\xa0AE \x12\xa5\xb7M\xcf@\x1d%\xa8\xc2\xd5\x91@\x0e\xa2\x80\x18\xd5\x1d\x00\x14\xb4\x80ZZ`-\x14\x00Q@\x05\x14\x00QH\x02\x92\x80\nJ\x00(\xa6\x01K@\x05-\x00%\x14\x80(\xa6!(\xa0'
+[PC] HANDSHAKE RX: b'aE\x00%\x14\x08)(\x18Q@\tE\x00\x14P\x02Q@\tE\x00\x14\x94\x08(\xa0aE \nJ`\x14P\x01E\x00\x14P\x01K@\x1c\xe7\xf6s\xfaR\x8d0\xd0\x04\xc3K\xf5\xa9WOA\xeb@\x16\x12\xd9W\xb5L#\xa0C\xb6\xd3\xb1Lc\xd6\x96\x80\x16\x8cP\x02RP\x02R\xd0!h\xa0\x02\x8a\x00ZJ\x06:\x8aB\n(\x18R\xd3\x00\xa4\xa0\x05\xa8\x1fK\x8eU\xaa\xaaU\x01\x03\x8c\x00\x05\x01\x00\x00\x0b\x8c\x00'
+[PC] HANDSHAKE RX: b'\x91\x00\xa4\xa0\x02\x96\x80\n(\x00\xa2\x80\x16\x8a\x00p\xa0\xd0\x02R\xd0\x01E\x00-%\x00\x14\xe1@\x0bM\xa4\x01KL\x02\x92\x80\x16\x8aB\n)\x8c))\x08)h\x18b\x90\n`.*\t"\r@\x8a2\xc0T\xe4S\xa2\xb8#\x83@\x16<\xc1Rp\xd4\x86V\x9b(i\xf0\xdc\xfa\xd3\x11k\xcd\x15\x14\xb3qHfm\xc5\xcdS\xfb[\x83\xd6\x98\x89E\xf3SM\xeb\x1e\xf4\xc6WyKw\xa8\xe9\x00R\xd0\x01K\x9a\x00)'
+[PC] HANDSHAKE RX: b'(\x00\xa4\xa40\xa4\xa6!*\xc5\x9f2P3\xa4\x83\xee\xd4\xf4\x84-\x14\x01\x1b\xd3(\x00\xa5\xa0\x07R\xd0\x02\xd1@\x05\x14\x80(\xa6\x01I@\x05%\x00\x14P\x02R\xd0\x01E\x02\x16\x8a\x06%\x14\xc0ZJ@\x14P\x01I@\x05\x14\x00\x94P\x01I@\x05\x14\x00RP\x01E\x00%\x14\x00\x94P\x01E\x03\x12\x8a\x04\x14P\x01E\x00\x14P0\xa2\x90\x82\x96\x98\x0c\xd9F\xca\x04\x1bi\xbbh\x01qF)\x8cZQ@\x0bKH'
+[PC] HANDSHAKE RX: b'\x05\xa2#\x18\xfd$U\xaa\xaaU\x01\x03\x8d\x00\x05\x01\x00\x00\x0b\x8d\x00\x91\x00\x80\x10\xd3h\x00\xa2\xa8B\xd1Hb\xd1@\x82\x8a\x06\x14P\x01E \x16\x8ab\x16\x8a\x00))\x0c))\x80\xb4P\x01K@\x05-0\x1c)MH\r\xa2\xa8\x05\xa4\xa4\x02\xd1@\x05-\x02\x1dM\xa4\x01E0\n)\x0c(\xa0\x02\x96\x80\nJ\x00ZZ\x04\x14P0\xa6\x9a\x00\x89\xd35Jh})\x88\xa34\x8f\x1fz\x96\xd2\xf7\x90\x1a\x81\x9a$\xac'
+[PC] HANDSHAKE RX: b'\x82\xb2\xee_\xcb~)\x08\x8c^\xb0\xefC\xde\x13LeW\x93uG@\x0bE \n)\x80QH\x05\xa2\x80\n)\x80QR\x02\x1aJ\xa0\n\xb1h\xd8\x90R\x03\xa4\x87\xee\xd4\xc2\x81\x0e\xa0\xd0\x04/\xd6\x9bH\xa1ii\x88ZZ@--\x00\x14P\x01E\x00%\x14\x0cJ)\x88J(\x00\xa5\xa0\x02\x8a\x00Z)\x00QL\x04\xa2\x80\n(\x01(\xa0\x04\xa2\x98\x05\x14\x00\x94\x94\x80Z(\x10\x94P0\xa2\x80\x12\x8a\x00J(\x00'
+[PC] HANDSHAKE RX: b'\xa2\x90\x05\x14\x00RP\x02\xd1@\tE0\nZ@\x14P\x02\xd1T\x02R\xff\xb1]\x10U\xaa\xaaU\x01\x03\x8e\x00\x05\x01\x00\x00\x0b\x8e\x00\x91\x00R\x10R\x1a\x06%(\xa6\x02\xd3\xa9\x00\xb4S\x00\xa6\xd0!\xb4P\x02\xd2\xd2\x01)i\x80Q@\tK@\x05-!\x89\x9a)\x80Q@\x82\x8a\x06%-\x00\x14S\x01h\xa4\x02\xd2\xd0!\xc2\x82h\x18\xdaZ\x04\x14P\x01K@\x05\x14\x0cp\xa4\xa0\x02\x8a\x04\x14P0\xa2\x81\x0bI'
+[PC] HANDSHAKE RX: b'@\x05\x14\x86-\x19\xa6!(\xa0\x04\xa5\xa41\xa6\xa2u\xa6\x05;\x8b}\xe2\xb3\x9e\xd5\xa3<T\x88twM\x1f\x06\xa0\xb8\x98\xbdP\xca\xf4\x99\xa4\x02\xd0(\x10\xea(\x18\x94S\x10QH\xa0\xa2\x98\x85\xa2\x90\x05\x14\x00R\x1a\x00J\xb5d\x9b\xa4\x14\x01\xd1\xc3\xf7ja@\x85\xa44\x01\x11\xa4\xa0b\xd2\xd2\x01ih\x01h\xa6\x01E\x00\x14P\x01I@\x05%\x00\x14P\x01K@\x05\x14\x00Q@\x05\x14\x00Q@\x82\x8a@%\x14'
+[PC] HANDSHAKE RX: b'\xc6%\x14\x00QL\x04\xa2\x90\x05%\x00\x14P\x01I@\x05\x14\x00\x94P\x01E!\x05\x14\x14%\x14\x08)i\x80\x94P0\xa2\x81\x05- \x1fI2\xa1\xd0\xa9U\xaa\xaaU\x01\x03\x8f\x00\x05\x01\x00\x00\x0b\x8f\x00\x91\x00LAL\xa0aE1\r\xa5\xa0c\x858P!i(\x18Sh\x01\xb4P \xa5\xa0b\xd2P!h\xa0\x04\xa2\x80\x16\x8a\x06%\x14\xc0(\xa0\x05\xa2\x90\x82\x8aC\x12\x96\x98\x82\x8a\x06--\x02\x1c)\r!\x89'
+[PC] HANDSHAKE RX: b'KL\x02\x8a\x00)h\x00\xa2\x90\x0eZ\r0\x12\x8a\x00(\xa0\x05\xa2\x80\n(\x00\xa2\x90\x82\x92\x81\x8e\xc5\x14\x00b\x8a\x00JB(\x10\xc2\x95\x13\xc2\x08\xa0\x0c\xfb\x8b\x1fJ\xcb\x96\x16Jc!\xa4\xa4\x02\xd0(\x01i\xd4\x08JJ\x00)h\x18R\xd3\x01h\xa4\x02RP\x01I@\x0eZ\xd8\xd3b\x1dh\xb0\x1b\x08)\xd4\x00\xb4\x8f@\x10\xd2R\x01\xd4P\x02\xd3\xa8\x00\xa5\xa6\x02R\xd0\x01I@\x05\x14\x00\x94R\x01(\xa0\x05\x14'
+[PC] HANDSHAKE RX: b'P1h\xa6 \xa2\x80\n(\x00\xa2\x81\tE\x03\nJ\x00(\xa0\x04\xa2\x80\n(\x00\xa4\xa0\x02\x8a\x00J(\x00\xa2\x80\x12\x8a@\x14P\x01E0\x12\x8a\x00(\xa0\x02\x8a\x06\x14\xb4\x00QHD\x86\x9bL\x05\xa6\xd0!i\xf6\xf5\xddU\xaa\xaaU\x01\x03\x90\x00\xfc\x00\x00\x00\x0b\x90\x00\x91\x00(\xa6\x02Q@\x0bN\xa41h\xa6\x01M4\x08m%\x03\nu\x02\x12\x8a\x00(\xa0aK@\tE\x00\x14P\x01K\xd2\x80\x10\xd1@\x0b'
+[PC] HANDSHAKE RX: b'E\x00\x14\x94\x00R\xd0\x01N\xa0\x05\xa6\xd0!ih\x00\xa4\xa0b\xd1L\x02\x96\x90\x0e\x14P\x03ii\x00RS\x01ii\x00Q@\x05\x14\xc0Z(\x00\x14\xb4\x80J(\x00\xa2\x80\nJ\x00c&j\xa4\xf6\xca\xc3\xa5!\x197V[y\x15@\xa9\x15C\x12\x8aB\x16\x96\x80\x12\x8a\x00Z)\x8cZ)\x00\xb4S\x00\xa4\xa4\x01IH\x07\xc62k\xa0\xb0\\F)\xdc\r\x01N\xa0\x05\xa6=\x00CE\x00--\x00--\x00-\x14'
+[PC] HANDSHAKE RX: b'\x00Q@\x05\x14\x00RP\x01E\x00%\x14\x80)i\x80\xb4P\x01E!\x05\x14\xc0(\xa0bQ@\x84\xa2\x81\x85\x14\x00QH\x04\xa2\x98\x05%\x00%-\x00!\xa2\x80\nJ\x06-%\x02\n)\x00Q@\x82\x8ac\n(\x00\xa2\x90\xc2\x8a\x04\x14\xb4\x01\xff\xd9)\x94\x82\x96U\xaa[CAP_EVT] img_id=11 done=1 error=0 timeout=0 '
+[PC] HANDSHAKE RX: b'soi=0 eoi=37109 jpg_len=37111\r\n[MCU_ACCOUNT] img_id=11 capture_len=37111 tx_len=37111 tx_status=0 mode=1 wait=1 timeout=0 done_b'
+[PC] HANDSHAKE RX: b'd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=37109\r\n\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x0c'
+[PC] HANDSHAKE RX: b'\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaaTX_DONE\r\n'
+[PC] HANDSHAKE RX: b'[TRANSFER_FAILED] img_id=11 capture_len=37111\r\n'
+[TCP_INJECT] buffered raw bytes=17
+[TCP_INJECT] buffered raw bytes=178
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT][HANDSHAKE] mixed bytes=223
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3457, buffer=3480
+[PC] IMAGE COMPLETE: img_id=11, chunks=145, bytes=37014
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=11 pc_received_len=37014 saved_file_size=DISABLED
+[AI] enqueued img_id=11, bytes=37014[AI] start img_id=11, bytes=37014
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=13 -> TX b'\xaaU\x01\x02\r\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.59, last_img_id=11, cache_img_id=10)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+217 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=11 -> YES conf=0.56 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=11, result=YES, conf=0.56
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\r\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=13 -> TX b'\xaaU\x01\x02\r\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=11, cache_img_id=11)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=111
+[TCP_INJECT] buffered raw bytes=97
+[TCP_INJECT][HANDSHAKE] mixed bytes=236
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3401, buffer=3424
+[PC] IMAGE COMPLETE: img_id=12, chunks=145, bytes=36958
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=12 pc_received_len=36958 saved_file_size=DISABLED
+[AI] enqueued img_id=12, bytes=36958[AI] start img_id=12, bytes=36958
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=14 -> TX b'\xaaU\x01\x02\x0e\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.56, last_img_id=12, cache_img_id=11)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+218 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=12 -> YES conf=0.58 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=12, result=YES, conf=0.58
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x0e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=14 -> TX b'\xaaU\x01\x02\x0e\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=12, cache_img_id=12)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=64
+[TCP_INJECT] buffered raw bytes=129
+[TCP_INJECT] buffered raw bytes=102
+[TCP_INJECT][HANDSHAKE] mixed bytes=295
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3464, buffer=3487
+[PC] IMAGE COMPLETE: img_id=13, chunks=145, bytes=37021
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=13 pc_received_len=37021 saved_file_size=DISABLED
+[AI] enqueued img_id=13, bytes=37021[AI] start img_id=13, bytes=37021
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=15 -> TX b'\xaaU\x01\x02\x0f\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.58, last_img_id=13, cache_img_id=12)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+219 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=13 -> YES conf=0.58 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=13, result=YES, conf=0.58
+[TCP_INJECT] buffered raw bytes=38
+[TCP_INJECT] buffered raw bytes=154
+[TCP_INJECT] buffered raw bytes=38
+[TCP_INJECT][END] mixed bytes=230
+[PC][END] IGNORE frame.type=0x03, seq=34025
+[PC][END] PARSE_ERR: BAD_EOF_RESYNC
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x0f\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] PARSE_ERR: CRC_FAIL_DROP_FRAME
+[PC][END] RX REQ seq=30705 -> TX b'\xaaU\x01\x02\xf1w\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=13, cache_img_id=13)
+[PC][END] IGNORE frame.type=0x7E, seq=26265
+[PC][END] IGNORE frame.type=0x03, seq=18925
+[PC][END] RX REQ seq=1823 -> TX b'\xaaU\x01\x02\x1f\x07\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=13, cache_img_id=13)
+[PC][END] IGNORE frame.type=0x03, seq=46404
+[PC][END] RX REQ seq=15 -> TX b'\xaaU\x01\x02\x0f\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=13, cache_img_id=13)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=133
+[TCP_INJECT] buffered raw bytes=49
+[TCP_INJECT][RX] mixed bytes=210
+[PC] RX bytes=4096, buffer=4137
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=4563
+[PC] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] RX bytes=4096, buffer=8400
+[PC] IGNORE frame.type=0x7E, seq=59099
+[PC] RX REQ seq=28318 -> TX b'\xaaU\x01\x02\x9en\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=13, cache_img_id=13)
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=12361
+[PC] PARSE_ERR: BAD_LEN_50419114_RESYNC
+[PC] RX bytes=4096, buffer=16437
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=3416, buffer=19847
+[PC] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] RX REQ seq=16 -> TX b'\xaaU\x01\x02\x10\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=13, cache_img_id=13)
+[PC] RX bytes=9, buffer=9
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] RX bytes=47, buffer=47
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] timeout drop img_id=[14]
+[PC] SESSION ABORT: image assembly timeout img_id=[14]
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=21
+[TCP_INJECT] buffered raw bytes=151
+[TCP_INJECT] buffered raw bytes=29
+[TCP_INJECT][HANDSHAKE] mixed bytes=201
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3491, buffer=3514
+[PC] IMAGE COMPLETE: img_id=14, chunks=145, bytes=37048
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=14 pc_received_len=37048 saved_file_size=DISABLED
+[AI] enqueued img_id=14, bytes=37048[AI] start img_id=14, bytes=37048
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=17 -> TX b'\xaaU\x01\x02\x11\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.58, last_img_id=14, cache_img_id=13)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+220 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=14 -> YES conf=0.60 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=14, result=YES, conf=0.60
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x11\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=17 -> TX b'\xaaU\x01\x02\x11\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.60, last_img_id=14, cache_img_id=14)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=17
+[TCP_INJECT] buffered raw bytes=237
+[TCP_INJECT][HANDSHAKE] mixed bytes=254
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3522, buffer=3545
+[PC] IMAGE COMPLETE: img_id=15, chunks=145, bytes=37079
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=15 pc_received_len=37079 saved_file_size=DISABLED
+[AI] enqueued img_id=15, bytes=37079[AI] start img_id=15, bytes=37079
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=18 -> TX b'\xaaU\x01\x02\x12\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.60, last_img_id=15, cache_img_id=14)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+221 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=15 -> YES conf=0.59 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=15, result=YES, conf=0.59
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x12\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=18 -> TX b'\xaaU\x01\x02\x12\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=15, cache_img_id=15)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=64
+[TCP_INJECT] buffered raw bytes=128
+[TCP_INJECT] buffered raw bytes=66
+[TCP_INJECT][HANDSHAKE] mixed bytes=258
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3480, buffer=3503
+[PC] IMAGE COMPLETE: img_id=16, chunks=145, bytes=37037
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=16 pc_received_len=37037 saved_file_size=DISABLED
+[AI] enqueued img_id=16, bytes=37037[AI] start img_id=16, bytes=37037
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=19 -> TX b'\xaaU\x01\x02\x13\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.59, last_img_id=16, cache_img_id=15)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+222 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=16 -> YES conf=0.59 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=16, result=YES, conf=0.59
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x13\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=19 -> TX b'\xaaU\x01\x02\x13\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=16, cache_img_id=16)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=17
+[TCP_INJECT] buffered raw bytes=97
+[TCP_INJECT] buffered raw bytes=45
+[TCP_INJECT][HANDSHAKE] mixed bytes=159
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=115
+[TCP_INJECT] buffered raw bytes=64
+[TCP_INJECT][RX] mixed bytes=207
+[PC] RX bytes=4096, buffer=4237
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=4383
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=3623, buffer=7924
+[PC] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] RX REQ seq=4241 -> TX b'\xaaU\x01\x02\x91\x10\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=16, cache_img_id=16)
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] PARSE_ERR: CRC_FAIL_DROP_FRAME
+[PC] RX bytes=17, buffer=7814
+[PC] PARSE_ERR: BAD_LEN_2198012245_RESYNC
+[PC] PARSE_ERR: BAD_LEN_3640655892_RESYNC
+[PC] RX REQ seq=20 -> TX b'\xaaU\x01\x02\x14\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=16, cache_img_id=16)
+[PC] RX REQ seq=20 -> TX b'\xaaU\x01\x02\x14\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=16, cache_img_id=16)
+[PC] RX bytes=9, buffer=9
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] RX bytes=47, buffer=47
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] timeout drop img_id=[17]
+[PC] SESSION ABORT: image assembly timeout img_id=[17]
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=30
+[TCP_INJECT] buffered raw bytes=173
+[TCP_INJECT] buffered raw bytes=66
+[TCP_INJECT][HANDSHAKE] mixed bytes=269
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3604, buffer=3627
+[PC] IMAGE COMPLETE: img_id=17, chunks=146, bytes=37140
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=17 pc_received_len=37140 saved_file_size=DISABLED
+[AI] enqueued img_id=17, bytes=37140[AI] start img_id=17, bytes=37140
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=21 -> TX b'\xaaU\x01\x02\x15\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.59, last_img_id=17, cache_img_id=16)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+223 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=17 -> YES conf=0.56 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=17, result=YES, conf=0.56
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x15\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=21 -> TX b'\xaaU\x01\x02\x15\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=17, cache_img_id=17)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=175
+[TCP_INJECT] buffered raw bytes=38
+[TCP_INJECT][HANDSHAKE] mixed bytes=241
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3594, buffer=3617
+[PC] IMAGE COMPLETE: img_id=18, chunks=146, bytes=37130
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=18 pc_received_len=37130 saved_file_size=DISABLED
+[AI] enqueued img_id=18, bytes=37130[AI] start img_id=18, bytes=37130
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=22 -> TX b'\xaaU\x01\x02\x16\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.56, last_img_id=18, cache_img_id=17)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+224 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=18 -> YES conf=0.59 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=18, result=YES, conf=0.59
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x16\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=22 -> TX b'\xaaU\x01\x02\x16\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=18, cache_img_id=18)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=99
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=81
+[TCP_INJECT][HANDSHAKE] mixed bytes=236
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3601, buffer=3624
+[PC] IMAGE COMPLETE: img_id=19, chunks=146, bytes=37137
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=19 pc_received_len=37137 saved_file_size=DISABLED
+[AI] enqueued img_id=19, bytes=37137[AI] start img_id=19, bytes=37137
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=23 -> TX b'\xaaU\x01\x02\x17\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.59, last_img_id=19, cache_img_id=18)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+225 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=19 -> YES conf=0.55 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=19, result=YES, conf=0.55
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x17\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=23 -> TX b'\xaaU\x01\x02\x17\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.55, last_img_id=19, cache_img_id=19)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=26
+[TCP_INJECT] buffered raw bytes=169
+[TCP_INJECT][HANDSHAKE] mixed bytes=195
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3505, buffer=3528
+[PC] IMAGE COMPLETE: img_id=20, chunks=145, bytes=37062
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=20 pc_received_len=37062 saved_file_size=DISABLED
+[AI] enqueued img_id=20, bytes=37062[AI] start img_id=20, bytes=37062
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=24 -> TX b'\xaaU\x01\x02\x18\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.55, last_img_id=20, cache_img_id=19)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+226 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=20 -> YES conf=0.56 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=20, result=YES, conf=0.56
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x18\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=24 -> TX b'\xaaU\x01\x02\x18\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=20, cache_img_id=20)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=38
+[TCP_INJECT] buffered raw bytes=149
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=24
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT][HANDSHAKE] mixed bytes=251
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=208
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT][RX] mixed bytes=248
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3523, buffer=3794
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] RX bytes=17, buffer=3694
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=17, buffer=3659
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] RX REQ seq=25 -> TX b'\xaaU\x01\x02\x19\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=20, cache_img_id=20)
+[PC] RX REQ seq=25 -> TX b'\xaaU\x01\x02\x19\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=20, cache_img_id=20)
+[PC] RX REQ seq=25 -> TX b'\xaaU\x01\x02\x19\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=20, cache_img_id=20)
+[PC] RX bytes=9, buffer=9
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] RX bytes=47, buffer=47
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] timeout drop img_id=[21]
+[PC] SESSION ABORT: image assembly timeout img_id=[21]
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=139
+[TCP_INJECT] buffered raw bytes=76
+[TCP_INJECT][HANDSHAKE] mixed bytes=243
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3530, buffer=3553
+[PC] IMAGE COMPLETE: img_id=21, chunks=145, bytes=37087
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=21 pc_received_len=37087 saved_file_size=DISABLED
+[AI] enqueued img_id=21, bytes=37087[AI] start img_id=21, bytes=37087
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=26 -> TX b'\xaaU\x01\x02\x1a\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.56, last_img_id=21, cache_img_id=20)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+227 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=21 -> YES conf=0.59 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=21, result=YES, conf=0.59
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x1a\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=26 -> TX b'\xaaU\x01\x02\x1a\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=21, cache_img_id=21)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=246
+[TCP_INJECT] buffered raw bytes=38
+[TCP_INJECT][HANDSHAKE] mixed bytes=312
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3512, buffer=3535
+[PC] IMAGE COMPLETE: img_id=22, chunks=145, bytes=37069
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=22 pc_received_len=37069 saved_file_size=DISABLED
+[AI] enqueued img_id=22, bytes=37069[AI] start img_id=22, bytes=37069
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=27 -> TX b'\xaaU\x01\x02\x1b\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.59, last_img_id=22, cache_img_id=21)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+228 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=22 -> YES conf=0.58 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=22, result=YES, conf=0.58
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x1b\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=27 -> TX b'\xaaU\x01\x02\x1b\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=22, cache_img_id=22)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=168
+[TCP_INJECT] buffered raw bytes=26
+[TCP_INJECT][HANDSHAKE] mixed bytes=222
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3551, buffer=3574
+[PC] IMAGE COMPLETE: img_id=23, chunks=145, bytes=37108
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=23 pc_received_len=37108 saved_file_size=DISABLED
+[AI] enqueued img_id=23, bytes=37108[AI] start img_id=23, bytes=37108
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=28 -> TX b'\xaaU\x01\x02\x1c\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.58, last_img_id=23, cache_img_id=22)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+229 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=23 -> YES conf=0.59 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=23, result=YES, conf=0.59
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x1c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=28 -> TX b'\xaaU\x01\x02\x1c\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=23, cache_img_id=23)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=38
+[TCP_INJECT] buffered raw bytes=88
+[TCP_INJECT] buffered raw bytes=96
+[TCP_INJECT][HANDSHAKE] mixed bytes=222
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3449, buffer=3472
+[PC] IMAGE COMPLETE: img_id=24, chunks=145, bytes=37006
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=24 pc_received_len=37006 saved_file_size=DISABLED
+[AI] enqueued img_id=24, bytes=37006[AI] start img_id=24, bytes=37006
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=29 -> TX b'\xaaU\x01\x02\x1d\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.59, last_img_id=24, cache_img_id=23)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+230 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=24 -> YES conf=0.56 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=24, result=YES, conf=0.56
+[TCP_INJECT] buffered raw bytes=30
+[TCP_INJECT] buffered raw bytes=99
+[TCP_INJECT] buffered raw bytes=118
+[TCP_INJECT][END] mixed bytes=247
+[PC][END] PARSE_ERR: BAD_EOF_RESYNC
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x1d\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=33794 -> TX b'\xaaU\x01\x02\x02\x84\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=24, cache_img_id=24)
+[PC][END] PARSE_ERR: BAD_EOF_RESYNC
+[PC][END] PARSE_ERR: CRC_FAIL_DROP_FRAME
+[PC][END] IGNORE frame.type=0x03, seq=48343
+[PC][END] PARSE_ERR: BAD_VER_127_RESYNC
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x1d\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] IGNORE frame.type=0x7E, seq=41324
+[PC][END] RX REQ seq=29 -> TX b'\xaaU\x01\x02\x1d\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=24, cache_img_id=24)
+[PC][END] RX REQ seq=29 -> TX b'\xaaU\x01\x02\x1d\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=24, cache_img_id=24)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=172
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT][RX] mixed bytes=212
+[PC] RX bytes=4096, buffer=4355
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=4506
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] RX bytes=4096, buffer=8402
+[PC] SESSION ABORT: image frame handling failed: ValueError: invalid chunk_seq/chunk_total: seq=5, total=2
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'\x01h\xa4\x02\xd1@\xc5\xa5\xa0AE\x00%%\x00E#U\x19\xde\x80(\xb1\xa8\xf3L\x06\x96\xab\x9ak\x1f6\x90\x8e\x82.\x950\xa0\x07\xd3\xc5\x00-\x14\x00\xb4P\x03\x1e\xa04\x00\x94P\x03\xa9h\x00\xa5\xa0\x02\x8a\x00)(\x00\xa2\x80\x12\x8a\x00JJ\x00(\xa0\x04\xa2\x80\n)\x80QHBQLaIH\x02\x8a\x00))\x80QH\x04\xa2\x98\tE\x00%%\x00\x14P\x02RP\x01IH\x02\x8a\x06\x14\x94\xc4\x14P\x00i('
+[PC] HANDSHAKE RX: b'\x00\xa2\x80\x12\x8a\x06P\x8e\xcdV\x9d\xf6u\xa4 \xfb2zR\xfd\x99}(\x01\x86\xd1})\xbfbJ\x00o\xd8\xd6\xaa\xcfe\x8eE03\xa4\\\x1a\x8e\x80=\xed\x829U\xaa\xaaU\x01\x03w\x00\x05\x01\x00\x00\x19w\x00\x91\x00\nJ\x00Jm1\x85%H\x89\xe1\x8bu6h\xb6\x1a`CR)\xa62M\xf4y\xb4\x84/\x9bG\x99@\x08e\xa6\x17\xcd1\x8c\xcd%!\r\xcd(\xa0\x0b\x10[\x17\xad\x9b[@\xbdE\x02/*'
+[PC] HANDSHAKE RX: b'b\xa3u\xf9\xa8\x19 JC\x08=\xa8\x01<\x8az\xc7\x8a\x00v*\t\xdfh\xa0\x08\xa099\xab9\xa0\x07\nu0\x1c(n\x95 S\xe9(\xab\xc3\xa50\x16\xac@(\x02b3L1f\x81\x19\x9a\x95\xa0q\xd3\x9a\xe7f\x8c\xc4qL\x08\xf7S\x83P2X\xde\xae\xc4i\x0184\xb4\xc0u\x19\xa0c\x81\xa9\x01\xa0\t3E \x10\xd4e\xe9\x80\xe4z\x9c5 \x17u\x19\xa0\x05\xddFh\x01sE\x03\x174\xb9\xa4 \xcd'
+[PC] HANDSHAKE RX: b'8\x1a\x06.isLAFi\x0ci4\xc6j\x04U\x96LV|\xd2\xd3\x02\xa3=3u\x02-[C\xe6\x8a\xb5j\x9e\\\xd4\x80\xdd\x8b\xa5N(\x01\xf4\xea\x00)h\x00\xa2\x80#z\x84\xd0\x02R\xd0\x02\xd2\xd0\x02\xd1@\x0b?\x9b\x0e\xb1U\xaa\xaaU\x01\x03x\x00\x05\x01\x00\x00\x19x\x00\x91\x00E\x00\x14\x94\x00\x94\x94\x00Q@\tE\x00%\x14\x00QL\x02\x8a\x00(\xa0\x04\xa2\x90\tE0\n(\x01(\xa4\x01IL\x02\x8a'
+[PC] HANDSHAKE RX: b'\x00m-\x00%%\x00\x14\x94\x00Q@\tE \x12\x8a`%\x14\x00Q@\tE1\tE!\x85\x14\x00\xdaLP\x03\xb6\xd1\x8a\x00M\xb4b\x80\x13mE2\xfc\xb4\x01\x83{\xfe\xb4\xd5J@6\x9bL\x02\x92\x81\x85\x14\x01j\tBR\xcf(a@\x8af\x92\x90\x05-\x00\x19\xa5\xcd0\x12\x92\x80\x15T\xb1\xa9\xfe\xca\xc4P\x04^Q\xce*\xe5\xbd\x99n\xd4\x80\xd8\x82\xdcG\xd2\xad*\xd3\x10\xfcTx\xf9\xa8\x19*\x8ax\x14\x00'
+[PC] HANDSHAKE RX: b'\xecQ\xb6\x80#j\xa3q\xf36(\x1140ai\xfeY\xa0b\x844\xf1\x19\xa4\x03\xfc\xbaR\x94\xc0\xa3:\x90\xf5m\x01+@\x0f\x15j\xdcR\x02\xd6\xda\x8d\xa9\x88\xaf(\xcdbj6{\x81 P\x06\x0c\x8aT\xe0\xd2\n\x06M\x1d[\x8d\xf1@\x16\x15\xeaAL\x05\xa5\xa61i\xe0\xd2\x02@i`3\x849U\xaa\xaaU\x01\x03y\x00\x05\x01\x00\x00\x19y\x00\x91\x00\xf4\x00\xd3Q\x1a@&qO\x12S\xb0\x12\x06\xa5\xcd \x0c'
+[PC] HANDSHAKE RX: b'\xd2\xe6\x80\x17u.\xea\x00]\xd4\xbb\xa9\x00\xb9\xa5\xcd0\x17u\x1b\xa8\x00\xdfF\xea@5\xa4\xaa\xf2\xcf\x81L\x0c\xf9\xe7\xcdSg\xcd0\x1bJ\x16\x90\x8b\x96\xd2yt\xff\x007\xf7\x99\xa6\x06\xdd\x8c\xdb\xd6\xaf-H\x0f\xa5\xa6\x02\xd1H\x02\x8a\x00\x8d\xea\n\x00ZZ\x00Z(\x01ih\x00\xa2\x80\nJ\x00(\xa0BQ@\xc6\xd1L\x02\x92\x90\x05-\x00\x14\x94\x00QL\x02\x92\x80\n)\x00Q@\tIL\x02\x92\x81\x05\x14\x0cJ'
+[PC] HANDSHAKE RX: b'(\x00\xa4\xa0\x04\xa2\x80\nJ@\x14\x94\xc0(\xa0\x04\xa2\x80\n(\x01(\xa6\x02R\xd2\x01(\xa0\x06\xd3\xc5\x0cb\xd1@\x84\xa3\x14\x00\x95\x0c\xff\x00p\xd0\x07;s\xf7\xcdU\xa0\x04\xa4\xa6\x02\xd3i\x0cm%\x02\x0c\xd1\xba\x80\x16\x8a@%%\x00\x14\xb4\x00\x94\xe4]\xc6\x805m`E\x1c\xd4\xeeF0(\x10\x90\xdan\xe4\xd6\x84P\x81\xda\x9a\x192\xadJ\x050\x17\x15\xdd\x1f\xd3\xa6U\xaa\xaaU\x01\x03z\x00\x05\x01\x00\x00\x19z'
+[PC] HANDSHAKE RX: b'\x00\x91\x00\x1e\xdf\x9a\x80%\xdbN\xa4\x01K@\x11I\xd2\xaa\xc7\x1e\xf9~\x94\xc4_\x0bN\xd9Hc\xb6\nxQ@\x06)\xa4P\x05\x1b\xa5\xe6\xac[\x8c\xc6(\x110J\x9a\x01\xcd\x00N\xf5\x0bP\x04MU\xe7\x8fp\xa0\x0c-F\xcf\xe6,+(\x8d\xbdi\x8cUj\x985\x00J\x8fVU\xe8\x02M\xd4\xea`--!\x8f\x06\x9d\xbe\x98\x0b\xba\x9aM !v\xa8\xd5\xf9\xa0E\x85z\x93u1\x8e\xcd.i\x00\xb4\x99\xa4\x02\xe6'
+[PC] HANDSHAKE RX: b'\x8c\xd3\x00\xddF\xfa\x00O2\x98f\xa4\x02}\xa2\x98n\xf1@\x11=\xe5T\x92m\xd4\x08\x84\xf3H\x05\x00<R\xd0\x02\xd3\xb3@\x1bZWJ\xd7Z\x00}-\x00-\x14\x80ZJ`B\xe6\xa3\xa4\x01K@\x0bE\x00:\x8a\x00Z(\x01)(\x00\xa2\x80\x12\x8a\x00J(\x10\x94P0\xa5\xa0BQ@\xc2\x8a\x00J(\x00\xa2\x98\x05%\x00\x14\x94\x00RP\x01IL\x02\x8a\x00JJ\x90\n)\x80RP\x02Q@\tE\x00\x14P'
+[PC] HANDSHAKE RX: b'\x02R\xd3\xf4\xd9\xcb\xc5U\xaa\xaaU\x01\x03{\x00\x05\x01\x00\x00\x19{\x00\x91\x00\x01(\xa4\x01I@\x05\x14\x01B\x1b\xc5=M[\x13\n,1D\xa2\x97}1\x0b\xba\x8c\xd0\x02n\xa8\xe4?-\x021n\xa0b\xe6\xaa\xfd\x95\xfd)\x0c\x91l\x9e\xa4\x1ay\xa0\t?\xb3\xe9\xaf\xa7\xfc\xb4\x01\x9fq\x07\x96j\xb5 \n\x050\x16\x90\xd0\x02QH\x05\xa4\xa0\x02\xa5\x8b\xad04`Wj\xd0\x86\xdf\xd6\x80-\xaab\xa5\x02\x98\x0f\x02\x9d'
+[PC] HANDSHAKE RX: b'\x8a\x00~)\x81y\xa4\x04\x98\xa2\x90\x05.\xda\xa0+\xdd\xfc\xabIf\x98\\\xfa\xd0\x05\xc0)\xd4\x80(\xa0\x02\x90\xd0"\xa5\xc8\xa7\xd9\x9f\x92\x98\x16\xc5K\x15!\x83\x9a\x8c\xd3\x10\xc3Q\x9aC+O\x08qXw\xd6\x98\xe9HFp\\\x1a\x934\x0c\x03\xd4\xa9%0,$\x95(l\xd3\x01\xf9\xa7f\x81\x8b\x9a7P \xddHZ\x81\x911\xa8K\xe0\xd0"h\xde\xa7\rH\x07\xee\xa7\xee\xa60\xcd\x1b\xa8\x013F\xfa\x00C%\''
+[PC] HANDSHAKE RX: b'\x99LC\x0b\xd4.\xf4\x86Wyj\xbbJh\x017\x1ap\xa0C\xa9j@z_X\xb2\xb9U\xaa\xaaU\x01\x03|\x00\x05\x01\x00\x00\x19|\x00\x91\x00\xa1=\x05!\x04u\xa6\x03\x91\x0b\xf4\xa7\x18\x8a\x9ab6\xf4\xd4\xda\x95\xa6*F>\x9d@\x05-\x00\x14\x86\x80 ze\x00-\x14\x00\xb4\xb4\x00\xb4\xb4\x00RS\x00\xa2\x90\x05%\x00%\x14\x00\x94P\x01I@\x0bI@\x0bE\x00%\x14\xc0(\xa0\x02\x8a\x00J(\x01(\xa0\x04\xa2'
+[PC] HANDSHAKE RX: b'\x81\tE\x03\x12\x8a\x00)(\x00\xa4\xa0\x02\x8a@%\x14\xc0)(\x01)h\x00\xa4\xa0\x04\xa5\xa0\x04\xa2\x80\n(\x03\x97W"\xa5\xf3\xd8w\xa6\x02\xfd\xa9\xfdiV\xed\xb3\xd6\x81\x9a\x96\xcf\xb9z\xd5\x8a\x00JLP!\xa61I\xe4\x8fJ@;\xcb\x03\xb5\x1b)\x886\xd22f\x81\x99z\x8c\x1cdV;\xae)\x01\x1d\x14\x00RP\x03\x82\x9a\xb3\x15\xa35!\x91\xcd\t\x8c\x9e*\x1cP"X\xe0.kN\xda\xcb\xd4S\x03J('
+[PC] HANDSHAKE RX: b'\x02\xd5\x95Z\x00x\x14\xecS\x10\xf1O\x02\x90\x0e\x14\xde\xf4\x0c)h\x01\xe8)\xcd\xc5\x023n\x1b\xcd\x94-\\\x8c`S\x02ZZC\n(\x00\xa6\xd5\x88\xb85U\xaa\xaaU\x01\x03}\x00\x05\x01\x00\x00\x19}\x00\x91\x00\xd0\x047\x03\xe5\xa8\xec\x8fQLE\xd1R\xafJ@4\xd3M\x03\x1bI@\x0cj\xa9<\x01\xc5\x021/-6r+8\xe6\x80\x19OW\xa0d\xea\xf52\xc9L\t|\xca<\xda\x00\x905&\xecS\x18y'
+[PC] HANDSHAKE RX: b'\x94\xd3%!\x11\x19)\x85\xa8\x10\xe4z\xb2\xb2P\x04\xa1\xa9\xfb\xa8(v\xeaij\x00B\xd5\x19j\x040\xbd7\xcc\xa6\x04\xb1\xc2\xcf\xcdO\xf6"\xc3\x9a\x90*\xdc\xd92sT\x0cx4\x00\xe0)\xd4\x00S\x93\x93@\x1bVp\xa9\x8cUk\xf8\x804\x01&\x9b\x08<\xd4\xf7\xb6\xea;P"\xdd\x9f\xfa\xba\xb6)\x0c~ii\x80\xb4\xb4\x00SM !jm\x00\x14\xb4\x00\xb4\xb4\x00\xb4P \xa2\x81\x89E\x00\x14\x94\x00Q@\t'
+[PC] HANDSHAKE RX: b'E\x00%\x14\x00QL\x02\x8a\x00(\xa4\x01E0\x12\x8a\x00))\x00QL\x04\xa4\xa0\x02\x8a\x00J(\x00\xa4\xa0\x04\xa2\x80\nJ`\x14\x94\x80(\xa0\x04\xa2\x80\nJ\x00(\xa0\x02\x8a\x00(\xa0\x0eR\x96\x98\r&\x90\x1e\xbb\x0bB\x9cU\xaa\xaaU\x01\x03~\x00\x05\x01\x00\x00\x19~\x00\x91\x00i\x01\xaba&x\xad!L\x05\xa5\xc5 \x17\x14\xb8\xc5\x02\x10\xd2b\x98\x054\x9a\x06V\x9cn\x15\x8d}\x0e9\xa4\x06y\x14\x94\x00\x82'
+[PC] HANDSHAKE RX: b'\xa7\x8a\x12\xe7\x81@\x1a\x96\x9anyz\xd2*\x90\xc7@\x8ck\xd6\xf3\x1f\xe5\xa6[\xd9\xee\xeb@\xcd(mB\xf6\xab\x88\x98\xa6\x04\xca)\xf8\xa0\x07\xe2\x96\x90\x0e\xa5\xa6\x03\xa9(\x00\xa5\xa4\x03\x96\xa2\xba\x93j\xd0\x05;Q\xb9\xf7\x1a\xd0\x14\xc0u\x14\x00R\xd0\x01I@\x0c\x90dU[\x7f\x96_\xad!\x17\x85J:P1\xa6\x9b@\x05%\x004\xd3\x08\xa0\n\x970o\x15\x95%\x96\xd7\xcd\x02\x1c\xd6\n\xcb\xf2\xd6M\xc4\x06\x16\xa0'
+[PC] HANDSHAKE RX: b'c\x14\xd4\xc0\xd0\x03\xb7\xd1\xba\x81\x12\t(\xf3*\x864\xbd7uH\x05-\x00\x02\x9e\x1f\x14\xc0\x95d\xa9\x96J\x00\x93u\x1b\xa8\x18\xd6j\x89\x9e\x81\x10\xbc\x94\xc5~h\x03f\xc5\xc6\xd1Zk\x8cR\x02\x1b\x8d\xbbk\n\xe5F\xea\x00\xadE\x00-*\xd3\x02\xf47e\x05%\xc4\xc6Z\x04>\xccv\x8fDU\xaa\xaaU\x01\x03\x7f\x00\x05\x01\x00\x00\x19\x7f\x00\x91\x00\xd2\xeb\xc9\xa9\xaeo<\xc1He\x8d>l\x8cV\x9a\xd0"Ju'
+[PC] HANDSHAKE RX: b'!\x8bE0\ni\xa4\x04-I@\x05-\x00-\x14\x00\xb4P\x02\xd2P\x01E\x00%\x14\x00\x94S\x01(\xa4\x01E\x00\x14P\x01E0\n)\x00Q@\tE1\tE\x03\x12\x8a\x00J(\x00\xa4\xa0\x02\x92\x98\x05% \n(\x01(\xa0\x04\xa2\x80\nJ\x00(\xa0\x02\x92\x80\n)\x80QH\x02\x8a\x00\xe5(4\xc62\x8a\x04[\xb3\x93kV\xc2J\x08\xa6\x04\x81\xb3O\x06\xa4C\xb3I\x9a`4\xb5\x19\xa0aM4\x01\x13U\x0b'
+[PC] HANDSHAKE RX: b'\xbc8\xa0\x0c\xf6\xb48\xcdSaR\x00:\xd6\xc6\x95\xe5\xe3\xe6\xc51\x1a/s\x1cc\x8a\xa14\x8f1\xa61\xd1\xdbz\xd5\xc8\xe2\xc5\x00N\x16\x9e\x16\x90\x12\x01N\xa6!\xc2\x96\x90\x0bKLb\xd1@\tKH\x05\xe9Y\xf7\xcf\x9e)\x88\x9e\xd96\xa5Y\xa0b\xd2\xd0\x01E\x00\x14\x94\x80F\xe9T\x87\x13\xd0"\xf2\xd4\xa3\xa5\x03\x1bIL\x02\x8a@%%\x00Fs\xfd\xf9\xb1U\xaa\xaaU\x01\x03\x80\x00\x05\x01\x00\x00\x19\x80\x00\x91'
+[PC] HANDSHAKE RX: b'\x00\xc2\xabK\x1d\x02+r\x86\xaa^\xaaH=\xe9\x81\x92Si\xa2\xa4aN\xcd1\x86h\xcd\x02\nz\x8c\xd0\x05\xb8m\xf7\nd\xf1\xec\xa0\x08(\xa0\x07\nplP\x03\xbc\xda_:\x98\x11\x99)\x85\xa8\x10\xdar\x8a\x06Z\x86B\x95u/\xf0(\x02\x19\xefK\xd56|\xd2\x02:)\x00S\xaa\x80\xb7ine5\xa6\xb6#\x15"3\xef \xf2\x9e\xa7\xb5\x80:P\x04\xf6\xeb\xe5KZ\xaah\x19%:\x98\x0bK\x9a\x00JkP'
+[PC] HANDSHAKE RX: b'\x04&\x92\x90\x0bE\x00:\x8a\x00)h\x00\xa2\x80\x12\x8a\x00)(\x00\xa4\xa0\x02\x8a\x00)(\x01h\xa0\x02\x8ab\n)\x0cJ(\x00\xa4\xa6\x01E\x00%%\x02\n(\x00\xa4\xa0bQ@\tE\x00\x14P\x02RP\x01E\x00\x14\x94\xc0JZ@\x14\x94\xc0(\xa0\x04\xa5\xa0\x02\x8a@rt\x86\x98\r\xcd%\x00=N\xda\x91n\x19M\x17\x02\xd4W\xfbjO\xed\x1ab-\xc56\xea\xb0(\x18\xed\xb4\xee\x95"\x02j\xb4\xb3\n\x06W'
+[PC] HANDSHAKE RX: b'\xf9\xad\x11\xae\x92U\xaa\xaaU\x01\x03\x81\x00\x05\x01\x00\x00\x19\x81\x00\x91\x00\xe452Z\x8e\xa6\x81\x0c\xb8\x8b+\x8a\xc0\xb9M\xaei\x01\x08\xabp\x07\xed\x9a\xa1\x9a\x11B\xcd\xf7\xb3V\xe3\x84\n@N\x16\x9f\x8a`<\nx\xa4!\xd8\xa7b\x80\x1c)h\x18QL\x05\x14P\x01E\x00G#aj\x82\xfe\xf6z\x04h%K@\xc5\xa2\x90\x05\x14\x00R\xe2\x80\x10\x8a\xa17\x12P"\xe2t\xa9\xbbP1))\x80Q@\x056\x90\t'
+[PC] HANDSHAKE RX: b'M+LD\x12\xc3\x9a\xc8\xbc\x88\xa5 3$<\xd4D\xd017S\x85\x00.h\xddL\x05\x06\x9c\xaf@\xcbIw\xb4TsO\xbe\x81\x10\xee\xa3} \x13\xcc\xa4\xdf@\xc35 \xa6!\xdbiqH\x05\xdbF\xda\x009\xa3&\x80\x134\x94\x00\x94\xb4\x00S\x96\x807t\xc06V\x9d\x00g\xeaQdf\xa9Z\\l8\xa6"i\xe6\x1b\x81\x15~\xd6\xe08\xa42\xd8\xa7R\x01ii\x88)\x8fHdTP\x02\xd1@\x0bE\x00'
+[PC] HANDSHAKE RX: b'--\x00%%\x03\n(\x10Q@\tE0\n(\x00\xa2\x90\x82\x8ac\xb9,\x8c\xe7U\xaa\xaaU\x01\x03\x82\x00\x05\x01\x00\x00\x19\x82\x00\x91\x00\nJ\x00(\xa0\x02\x92\x80\n(\x10RP0\xa4\xa0\x02\x92\x81\x05\x14\x0cJ)\x80\x94R\x10\x94\xb4\x0cm\x14\x08(\xa0bQ@\tK@\x05%1\x85\x14\x84\x14P\x01E\x00rt\xd3@\r\xa2\x81\x8bM\xa0Bf\x9c\xa6\x98\x17\xedf\xc5i\xc504\x01>\xfa\x8aI\xd4w\xa4"'
+[PC] HANDSHAKE RX: b'\xb3\xce\xcep\xb4\xf8\xad\xcbr\xd4\xc6[TT\xa0\x9a@Q\xbc\xbaT\x18\xefX\xaf\xbaf\xe0P\x05\x98,}kF+`\xa2\x80,\xaab\xa4\x02\x98\x0e\xc58\n\x00v)\xc2\x80\x1c)\xf4\x00Q@\x06h\xa0B\x8a)\x0c(\xa6\x05k\x8c\x91\xc52\xd2=\xa3=\xe8\x11ui\xd4\x86\x14P \xa5\xa61h\xa0\x04\xaa7_z\x90\x8b6\xe7(*j\x06\x14P \xa2\x81\x85%\x00%!\xa6!\xa6\xaa\\\xc5\xbcP3\n\xf6\xd4'
+[PC] HANDSHAKE RX: b'\x83\xc5g\x954\x80(\xe6\x98\r\xe6\x8a@H\xa2\x9d\x8a`\x1bi\xdbh\x016R\xec\xa4\x02l\xa3e\x00<-8P\x03\xc5O\x0c{\xcd0k\xc0\xda.U\xaa\xaaU\x01\x03\x83\x00\x05\x01\x00\x00\x19\x83\x00\x91\x004\xa1\xb1\x18\xa9\xbe\xc2\xbe\x94\x80ci\xaa{T-\xa6zQq\x15\xdfMa\xde\xa2k\x19\x05\x03"kw^\xd4\xc2\x84P\x03iE\x00\\\xb6\xb9\xf2\xf1Z)\xa8\x0fZ,\x03no\x03\xadd\x17\xe7\x8a\x00\x0c'
+[PC] HANDSHAKE RX: b'\xa4\xd5\xdd:O\xde\x01@\x1b\xe8x\xa9)\x00\xb4\xb4\xc0*7\xa4\x04t\xb4\x00\xb4P\x02\xd1@\x0bE\x00\x14\x94\x00Q@\tE\x00\x14P\x02QL\x02\x8aB\n(\x18\xb4\x94\x08(\xa61(\xa0\x04\xa2\x80\n(\x01(\xa0\x04\xa2\x80\nJ\x00)(\x00\xa2\x80\x12\x8a`%\x14\x80)(\x00\xa2\x80\x12\x8a\x04-%\x03\n(\x01(\xa0b\xd1@\x8eH\xd3)\x8cJZB\na\xa60\xa5\x14\x80z\xbe\xd3Vb\xba+LD\x86'
+[PC] HANDSHAKE RX: b'\xf8\xf4\x14\xf87L\xddi\x81\xa9\x0c\n\x82\x9e\xd2\xaaw\xa4\x03<\xe1\x8c\xe6\xa8\\\xde\xe7\x84\xa4"\xa0\x85\xe6l\xb5^\x86\xd4- ,\xacx\xa9B\xd5\x01&)q@\x0b\x8aQ@\xc7\nu \x1dE1\x05\x14\x11\xb6\n2U\xaa\xaaU\x01\x03\x84\x00\x05\x01\x00\x00\x19\x84\x00\x91\x00\x86\x14P\x03\xa8\xa6\x02Q@\x08E(\x18\xa4\x03\x85:\x98\x84\xa2\x81\x8e\x14R\x01i(\x10\x95R\xea\x81\x92Z\x1f\xdd\xd5\x8a\x04\x14\xb4\xc6\x14'
+[PC] HANDSHAKE RX: b'R\x00\xa4\xa0\x04\xa4\xa6\x03M4\x8a\x00\x82X\x01\xac[\xcb,t\xa4"\xbd\xbd\xbe_\xe6\xad\'\xd3\x93g\x02\x90\x19S\xdb\x18\xcdC\x8ac\x1c)h\x00\xa7P\x03\x94f\xac\xad\xb9a@\x84{W\xf4\xa8Ll;S\x01\xb4\x94\x86(\xad-9r\xd9\xa0F\xea\x0e)\xf4\x86\x18\xa3\x14\x00l\xa6\x98\x85\x00D\xd6\xcbU\xe6\xb1\x04q@\x8ck\x98|\xb7\xf6\xa8)\x80\xb4\xb9\xa0`M2\x98\x84\xab\x9a\x7f\xfa\xf1HgI\x17J\x92'
+[PC] HANDSHAKE RX: b'\x80\x1dE\x00\x15\x13\xd2\x10\xda(\x18\xb4\xb4\x00R\xd0\x01E\x00-%\x00\x14\x94\x00Q@\x05%\x00\x14\x94\xc0)h\x00\xa2\x90\x05\x14\xc0J(\x10Q@\tE\x03\x12\x8a\x04\x14\x94\x0cZJ@%\x14\xc0)(\x00\xa4\xa0\x02\x8a\x00JJ`\x14R\x00\xa2\x90\tE0\n(\x00\xa2\x80H G0U\xaa\xaaU\x01\x03\x85\x00\x05\x01\x00\x00\x19\x85\x00\x91\x00\n(\x01)h\x19\xc8\x13M\xa0BR\xd0\x01L\xa6\x01E!\x85:\x98'
+[PC] HANDSHAKE RX: b'\x85^\xb5\xabc"\xc6\xb9j\x00\x92m@\x0e\x95\x9c\xf7\x0e\xe6\x80\'\x8cH\xf5f+OZ@\\H\x80\xa9B\xd0!\xdbiE\x00:\x96\x98\x0bJ(\x01\xd4P1h\xa0\x02\x8a\x00ZZ@\x14\x94\xc0ZZ\x04\x14P1\xc2\x8a\x00JZ@:\x92\x81\x0bE\x03\x12\xa1\x957S\x10\xe8\x13`\xa9)\x00R\xd01h\xa0\x04\xa2\x80\x12\x92\x81\tE1\x89\x8a\x82h\x83R\x036Xv>j\xe5\xb4\xdb\x86\x1a\x81\x11\xdeZ\x89W'
+[PC] HANDSHAKE RX: b'\xa5aM\x11\x8c\xd02*Z\x00Zp\xa0\x0b\xd6\xb6\xc5\xb1Z\xd1A\xc0\xa0D\xbe@\xa8\xde\xd0\x11\xd2\x90\x14\xa6\xd3\xc5S\x92\xcd\xd6\x98\x10\xf9L\rli\xaa1@\xcda\xd2\x96\x90\x05-\x00\x14P\x01M"\x802\xf5(x\xcdc\x9e\r1\r\xa5\xa61)(\x02TQ\xb2\xae\xe9\xaa7R\x03q:T\x94\x84--1\x89Q5\x002\x96\x90\x0e\xa5\xba\x81\n\x83U\xaa\xaaU\x01\x03\x86\x00\x05\x01\x00\x00\x19\x86\x00\x91\x00\xa0'
+[PC] HANDSHAKE RX: b'\x02\x8a\x00)i\x80QH\x04\xa2\x80\n)\x80\x94R\x01(\xa6\x01E\x00\x14R\x00\xa2\x98\x82\x8a\x06\x14\x94\x00Q@\tE\x02\nJ\x06-%\x00%\x14\x08J(\x18\x94P\x01I@\x05\x14\x00RP\x01E\x00\x14P\x01I@\x05\x14\x00Q@\x05\x14\x01\xc7f\x9bH\x02\x8c\xd3\x18\xb9\xa6\xd3\x10\x94P\x03\x80\xa5\xa41*e\xdc\xdcP"\xc4V\xac\xfdj\xf46X\xeb@\x16\x96 \xb5(\x14\xc0~(\xc5\x02\x16\x96\x81\x8bE1'
+[PC] HANDSHAKE RX: b'\x0e\xa7b\x90\xc5\xa4\xa0\x05\xa2\x80\x16\x8a@-\x14\xc0J(\x00\xa2\x80\x16\x96\x81\n)M\x03\x12\x96\x80\x16\x8a\x00(\xa0\x02\x8a@8RP \xa2\x81\x85\x14\x00Q@\tIL\x04\xa2\x80\ni\xa4\x05yS5X\xc7\xb7\xa50%Yx\xc3VV\xa5\x82\xd9\x14\x80\xcf\xa5\x1c\xd0\x03\xf6\x9a\xb3m\x0e\xe6\xa0F\xe5\xbc\x1b\x16\xac\x8e(\x18\xfa\\P\x03JTm\x084\x01\x13[\x03N\x8a\x1d\x94\x01d\x1a\\\xd0\x02\xe6\x8a\x003a'
+[PC] HANDSHAKE RX: b'\x86\xfe\x1bU\xaa\xaaU\x01\x03\x87\x00\x05\x01\x00\x00\x19\x87\x00\x91\x00E \nJ\x00\xcf\xd4$\xe2\xb1\x1e\x9d\x846\x90\xd01\xb4\xb4\x00n\xc5Z\xb1s\xe6P\x07C\t\xe2\xa6\xa0\x05\xa2\x80\x03Q7Z@6\x96\x80\x16\x96\x98\x0bE\x00\x14R\x00\xa2\x80\n)\x80RR\x00\xa4\xa6\x01I@\x0bE\x00-%\x02\n(\x18QHAILaE\x02\x12\x8a\x06%\x14\x00RP\x01I@\x05\x14\x00\x94P\x01E\x00%\x14\x00\x94S\x00'
+[PC] HANDSHAKE RX: b'\xa4\xa4\x01KL\x02\x92\x90\x05\x14\x08)(\x18\xb4R\x03\x8c4\x84S\x01)\xb9\xa0\x05\xcd\x1d\xa8\x01i)\x80\xe1\xcdH\xb1\x96\xa4\x05\xb8l\x8bsW\xe1\xb3\x0bHE\xb4\x88\n\x90-P\xc5\xc5(\x14\x00\xb4\xb4\x08Z)\x8c)i\x00\xe1K@\x05\x14\x08QKLaKHAI@\xc2\x8aB\nZ\x06%-0\x14R\x9a\x00JQ@\x0bI@\x05- \nZ`:\x92\x80\x12\x8a@\x14\xb4\x08J(\x01(\xa60\xa4\xa4\x01'
+[PC] HANDSHAKE RX: b"IL\x06\x91L)H\n\xb7\x11\xf1X\xd7(A\xa6\x05Z\x92!\xaerr\xf6U\xaa\xaaU\x01\x03\x88\x00\x05\x01\x00\x00\x19\x88\x00\x91\x00\x93H\rH\xadr\xb5b\xde/,\xd3\x03E)\xc4R\x00\x1cS\xf3@\x0bE\x00\x18\xa4\xa0\x02\x9b@\r-Q5\xd0^\xb4\x00\xa2\xedMH'_Z\x00w\x9c*).@\xefHF=\xec\xfb\xda\xa9\x93T\x02f\x8a\x00i\xa4\xa41*\xcd\x9b\x85\x93\x9a\x00\xe8\xad\xdfr\xd4\xe2\x90\x0bK"
+[PC] HANDSHAKE RX: b'L\x06\x93Q\x1a@%:\x98\x0bKH\x05\xa2\x80\n)\x80QH\x02\x8a\x00J(\x00\xa4\xa0\x04\xa2\x80\nZ`\x14R\x00\xa2\x98\x82\x92\x81\x85\x14\x08J(\x18RP\x01E\x00%\x14\x00RP0\xa2\x81\tE\x00\x14\x94\x00RP\x01E\x00\x14P\x02QH\x02\x8a\xa0\n)\x00Q@\x05\x14\x01\xc7RP23M\xa4\x01N\x14\xc4;mI\x1d\xb3=!\x9a\x16\xfa\x7f\xa8\xab\xf1\xda*\xd0"q\x18\xa7\x81T\x03\xf1K\x8a\x00J'
+[PC] HANDSHAKE RX: b')\x08p\x14S\x00\xa5\xa0\x04\xa5\xa6\x03\xc5\x14\x86-%\x02\x1dE\x03\x16\x92\x80\nJ\x00(\xa4\x02\xd1L\x02\x96\x81\n)M\x03\x12\x9d\xd7\x89\xca7U\xaa\xaaU\x01\x03\x89\x00\x05\x01\x00\x00\x19\x89\x00\x91\x00@\x84\xa2\x81\x85\x14\x00R\xd0!ih\x18\x94\x94\x00R\xd0\x01E\x00%\x14\x08)(\x18RR\x10\x94\xb4\x00\xc6Z\xa7=\xae\xe1@\xcc{\x8bS\x1d6\xd9~zb7\xe2A\xb6\x9f\xb6\x90\xc4\x0cT\xd5\x84|\xd3\x01\xf4'
+[PC] HANDSHAKE RX: b'\x94\x80\\\xd3\xb3@\x05\x14\x00R\x1a\x00\xaf;m\x15\x85q1/\xc1\xa0DBv\x1d\xeaAv\xfe\xb4\xc6?\xedmLi\xcbR\x02\x12i\xb4\xc0(\xa4\x02RP\x02S\x90\xf3@\x1d%\x81\xfd\xd8\xab\x82\x80\x1dE\x005\xaa*\x00)h\x01ii\x00\xb4\xb4\xc0(\xa0\x02\x8a\x00J(\x00\xa4\xa4\x01IL\x02\x92\x80\x16\x8a\x04\x14\xb4\x00\x94\xb4\x00\x94P\x01I@\xc2\x8a\x00)(\x10RP0\xa2\x80\x12\x8a\x00(\xa0bQLB'
+[PC] HANDSHAKE RX: b'QH\x02\x92\x80\n(\x00\xa4\xa0\x05\xa4\xa0\x02\x8a\x00(\xa6\x01E \n)\x01\xc6\x9aJ\x00JM\xa6\x98\xc7\xa4\x0c\xdd\xaa\xe4v\x0cz\xd3\x11r+\x05\x03\xe6\xab\x91\xc0\x07jB,*S\xf1@\x06)j\xd9(\x1deU\xaa\xaaU\x01\x03\x8a\x00\x05\x01\x00\x00\x19\x8a\x00\x91\x00\x86\x14R\x01\xb4\xe1@\x85\xa4\xa6\x01E \x16\x94P\x03\xa8\xa0\x02\x8a\x00Z)\x80RR\x01h\xa0bQ@\x0e\xa4\xa0\x05\xa2\x81\n)h\x00\x14\xa6'
+[PC] HANDSHAKE RX: b'\x80\x12\x8a\x06-% \nZ`\x14\xea\x04!\xa2\x81\x85\x14\x84\x14\xb4\x0cJ(\x10RS\x18RP\x01E!\x05!\xa62\xb4\xd0\x07\xac\xc9mLm\x91@\x16\xedg\xec\xd5~\x90\r<\xd4y+L\tRl\xd4\xcb\xcd\x00-4\xd2\x0236(\x17\n{\xd0\x04\x82AH\xd2\xa8\xef@\x8c\xeb\xeb\x91\x8c\n\xc7c\x93L\x06R\xd01ii\x08J(\x18\x94\x94\xc4\x14R\x01\xb5-\xbanz\x00\xe9-W\n*\xd0\xa0b\xd1@'
+[PC] HANDSHAKE RX: b'\rz\x8a\x80\x16\x96\x90\x0bK@\x0bE0\nZ\x00J(\x00\xa4\xa0\x02\x92\x80\n)\x00\x94P\x01KL\x02\x8a\x00(\xa0\x02\x92\x80\n(\x00\xa4\xa0\x02\x8a\x00J(\x00\xa4\xa0\x02\x8a\x00)(\x00\xa4\xa0\x02\x8a\x00J(\x00\xa2\x80\nJ\x00(\xa0\x02\x8a\x00(\xa0\x02\x8a\x00(8\x90(\tU\xaa\xaaU\x01\x03\x8b\x00\x05\x01\x00\x00\x19\x8b\x00\x91\x00\xa4\x07;\xfd\x9a\xe7\xb5(\xd3M\x00L\xba`\xa9V\xc1\x05\x02,%\xb8^\xd5'
+[PC] HANDSHAKE RX: b'(ALc\xb6\xd3\xf1L\x07\x81K@\x82\x8cP0\xa6\x1ab\nu \x12\x96\x80\n(\x01i(\x01\xd4P\x01E\x00-\x14\x00R\xd00\xa4\xa4 \xa2\x98\x05\x14\x00\xb4P\x02\xd1@\xc7\n\r\x00%-!\x05\x14\xc6\x14P\x01J(\x01M%\x00\x14\xb4\x00\x94P\x01E\x00-%\x00\x14R\x10Q@\xc3\x14b\x80\x02*\t#\xddL\n2\xc2T\xe4S\xe1\xb8\xc7\x06\x90\x8b\x01\xc5I\x80\xc2\x80+K\x95<S\xe1\xb9\xec\xd4\x0c'
+[PC] HANDSHAKE RX: b'\xb5\xe6\x8a\x8aYh\x036\xe2\xe7\xd2\xa9\xfd\xa9\xb3L\tE\xeb\x0e\xf4\x86\xf5\x8d\x00Wy7Ty\xa0\x02\x8a\x00Z\\\xd2\x01(\xa6\x02Q@\x05\x14\x846\xacZs%\x03:8>\xedX\x14\x00R\xd0\x04oL\xa0\x02\x96\x90\x0bKL\x05\xa5\xa4\x01E\x00\x14\x94\xc0(\xa0\x04\xa2\x81\x05%\x03\n)\x00QL\x05\xa4\xa0\x02\x8a`\x14R\x00\xa4\xa0\xc3k\n{U\xaa\xaaU\x01\x03\x8c\x00\x05\x01\x00\x00\x19\x8c\x00\x91\x00\x02\x8a\x00'
+[PC] HANDSHAKE RX: b')(\x00\xa2\x80\x12\x8a\x00)(\x01i(\x00\xa4\xa0AE\x03\x12\x8a\x00)(\x00\xa2\x80\x16\x92\x90\x05\x14\xc0(\xa0\x02\x8a\x00(\xa0\x06l\xa3e\x00\x04Sv\xd3\x10\xb8\xa5\x02\x81\x85-\x00:\x97\x14\x08Z(\x01\xb4\xd3@\xc2\x96\x81\x05-\x00\x14P\x02\xd2P\x02\xd1@\tE\x03\x1dE\x00\x14P\x02\xd3h\x01i(\x00\xa5\xa0\x02\x8a\x00ZZ\x00p\xa0\xd0\x03ii\x80QH\x05\xa4\xa0\x05\xa5\xa4!\xd4\xda`\x14R\x18RS'
+[PC] HANDSHAKE RX: b'\x10\xb4R\x00\xa2\x81\x85\x14\x00\xb4\xea\x00J(\x00\xa6\x9a\x00\x89\xd4\x1a\xa54^\x94\xc4Q\x95\xda:\x9a\xd2\xf3\xd6\x98\x17\xf2\xb2-f\\\xbf\x96\xfcR\x19\x18\xbb"\x95\xee\xc9\x14\x08\xa8\xef\x9ae\x03\x16\x92\x80\x16\x92\x90\x0bE\x00-\x14\x08JZc\n)\x00\x94S\x01\xb5f\xd4\xfc\xe2\x90\x8e\x8e\x1f\xbbS\x8a\x06-)\xa0\x08Z\x9b@\x05-\x00:\x96\x80\x16\x8a\x00)i\x00\x94P\x01I@\x05\x14\x00\x94\x94\x00R\xd3\x92k\xc9'
+[PC] HANDSHAKE RX: b'\xe0U\xaa\xaaU\x01\x03\x8d\x00\x05\x01\x00\x00\x19\x8d\x00\x91\x00\x00\xa2\x80\n(\x00\xa2\x80\n(\x01(\xa0\x02\x8a\x00(\xa0BQ@\xc4\xa2\x98\x05% \n(\x01(\xa6\x01IH\x02\x8a\x00)(\x00\xa2\x80\n(\x00\xa2\x80\n)\x80QH\x02\x96\x90\x0b\x8aJ`%6\x98\x85\xa4\xa0\x02\x96\x81\x8bN\xa0\x05\xa2\x81\x08i\x98\xa0\x04\xa2\x98\x0bKH\x02\x8a\x00Z(\x01(\xa0\x05\xa5\xa4\x02f\x8a`\x14\x86\x81\x85-\x02\x12\x96\x81\x85'
+[PC] HANDSHAKE RX: b'\x14\x08(\xa0\x05\xa5\xa0c\x85)4\x846\x8ac\nZ\x00(\xa4\x02\xd1L\x07\nJ\x00J)\x08ZJ`\x14R\x01h\xa60\xa2\x90\x0bFh\x01(\xa6!(\xa0cMD\xcb@\x8aw\x16\xdb\xab=\xed\xda3\x91@\x0e\x8e\xe9\x93\x83P\\M\xbe\x90\x15\xf3Fi\x8c3KH\x05\xa2\x80\nJ\x00ZJ`-\x14\x80Z(\x00\xa2\x98\xc2\x9bH\x90\xabV)\xbaA@\x1d\x1c=*a@\xc5\xa4n\x94\x01\t\xa4\xa0\x05\xa5\xa4'
+[PC] HANDSHAKE RX: b'\x03\xa8\xa0\x05\xa5\xa6\x01E \n(\x01(\xa6\x02Q@\t\xf7\xa8\xdd\x0eU\xaa\xaaU\x01\x03\x8e\x00\x05\x01\x00\x00\x19\x8e\x00\x91\x00E\x00\x14R\x01h\xa0\x02\x8a`\x14P \xa4\xa0aE\x00\x14\x94\x00Q@\x05%\x00\x14P\x02Q@\x05%\x00\x14P\x01IH\x02\x8ac\x12\x96\x81\x05%\x00\x14P\x01E\x00\x14P\x01E \nZ`:\x92\x80\nn(\x10RS\x01(\x14\x00\xea} \n)\x8cJm\x02\x12\x92\x81\x8bE1'
+[PC] HANDSHAKE RX: b'\x0bE \nJ\x00)h\x18Q@\x82\x8a\x00J(\x00\xa5\xa0\x02\x8a\x00Ju\x00\x14P0\xa5\xa0C\x85!\xa40\xa5\xa6\x01E\x02\n(\x18R\xd0\x03\x85!\xa0\x02\x92\x81\x0bE\x03\nZ@\x14S\x01)h\x00\xa4\xa6\x03\x85\x18\xa4\x01K@\r\xa6\x91H\x06\x94\xa8\x9a\x00E03\xeel\xb3\xd2\xb3&\x85\x92\x90\x88)h\x18R\x8a\x04.ih\x18\x94\x94\xc0(\xa0\x05\xa5\x14\x00\xb4f\x80\x12\x92\x80\n(\x01@\xad\x8d:\x1e'
+[PC] HANDSHAKE RX: b'\x01\xa5q\x1a\xe9RP0\xa6\xb5\x00Bh\xa4\x02\xd2\xd0\x02\xd2\xd3\x01h\xa0\x02\x8a\x00(\xa4\x01I@\x05\x14\xc0J(\x00\xa2\x80!\xb6\xbfyU\xaa\xaaU\x01\x03\x8f\x00\x05\x01\x00\x00\x19\x8f\x00\x91\x00\nZ\x00)(\x10QLaE \n(\x00\xa4\xa0\x02\x8a\x00J(\x00\xa4\xa6\x01E \x12\x8a\x00(\xa0\x02\x92\x80\n)\x80QH\x02\x92\x80\n(\x00\xa2\x81\x85\x14\x84\x14P\x02\xd1@\x0f\xa4\xa0B\xd3)\x80RS\x18\x94P'
+[PC] HANDSHAKE RX: b"\x02\x8ax\xa0B\xd2R\x00\xa6\x91L\x06\xd2P\x02\xd2\xd3\x01)i\x0c))\x88)i\x00Q@\x05%\x00\x14\xa2\x80\x10\xf5\xa2\x81\x8bI@\x85\xa2\x80\n(\x18\xb4\xea`-6\x90\x0bE\x02\x16\x92\x90\x0bE\x03\nZ`9i\r\x00%\x14\x80(\xa6\x01KH\x02\x8ab\x16\x8a\x00)h\x00\xa5\xa41))\x80\xb4P\x01Hh\x01\x853U'\xb6\x0fH\x0c\x9b\xab=\xbd*\x8b)Z`%\x14\x00R\xd2\x00\xa2\x98\x0bE\x00\x14"
+[PC] HANDSHAKE RX: b'\xb4\x80Z)\x80\x94R\x01(\xa6\x04\x91\x0c\xb5oX.\x10R\x11\xa0\xb4\xfa\x06\x14\xc7\xa0\x08ii\x00S\xa9\x80\xb4\xb4\x00\xb4R\x00\xa2\x80\nJ\x00))\x80RP\x02\xd2R\x01h\xa0\x02\x8a`\x14\x0e\xff4\x03U\xaa\xaaU\x01\x03\x90\x00>\x00\x00\x00\x19\x90\x00\x91\x00R\x00\xa2\x98\x05\x14\xc0)(\x00\xa2\x90\x05%\x17\x01i(\x00\xa2\x90\tE0\x12\x8a\x00(\xa0\x02\x90\xd0\x01E\x00\x14P\x01E\x00\x14\x94\x00\xb4\x94\x80)'
+[PC] HANDSHAKE RX: b'i\x8c(\xa0AE0?\xff\xd9\xe1\xe7\xcd&U\xaa[CAP_EVT] img_id=25 done=1 error=0 timeout=0 soi=0 eoi=36919 jpg_len=36921\r\n[MCU_ACCOUNT] img_id=25 capture_len='
+[PC] HANDSHAKE RX: b'36921 tx_len=36921 tx_status=0 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=36'
+[PC] HANDSHAKE RX: b'919\r\n\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01'
+[PC] HANDSHAKE RX: b'\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01\x1e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaaTX_DONE\r\n'
+[PC] HANDSHAKE RX: b'[TRANSFER_FAILED] img_id=25 capture_len=36921\r\n'
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=158
+[TCP_INJECT][HANDSHAKE] mixed bytes=170
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3429, buffer=3452
+[PC] IMAGE COMPLETE: img_id=25, chunks=145, bytes=36986
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=25 pc_received_len=36986 saved_file_size=DISABLED
+[AI] enqueued img_id=25, bytes=36986[AI] start img_id=25, bytes=36986
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=31 -> TX b'\xaaU\x01\x02\x1f\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.56, last_img_id=25, cache_img_id=24)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+231 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=25 -> YES conf=0.58 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=25, result=YES, conf=0.58
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x1f\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=31 -> TX b'\xaaU\x01\x02\x1f\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.58, last_img_id=25, cache_img_id=25)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=38
+[TCP_INJECT] buffered raw bytes=142
+[TCP_INJECT] buffered raw bytes=81
+[TCP_INJECT][HANDSHAKE] mixed bytes=261
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3386, buffer=3409
+[PC] IMAGE COMPLETE: img_id=26, chunks=145, bytes=36943
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=26 pc_received_len=36943 saved_file_size=DISABLED
+[AI] enqueued img_id=26, bytes=36943[AI] start img_id=26, bytes=36943
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=32 -> TX b'\xaaU\x01\x02 \x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.58, last_img_id=26, cache_img_id=25)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+232 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=26 -> YES conf=0.62 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=26, result=YES, conf=0.62
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01 \x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=32 -> TX b'\xaaU\x01\x02 \x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.62, last_img_id=26, cache_img_id=26)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=26
+[TCP_INJECT] buffered raw bytes=132
+[TCP_INJECT] buffered raw bytes=128
+[TCP_INJECT] buffered raw bytes=17
+[TCP_INJECT][HANDSHAKE] mixed bytes=303
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=94
+[TCP_INJECT] buffered raw bytes=37
+[TCP_INJECT][RX] mixed bytes=159
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3599, buffer=3781
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] PARSE_ERR: CRC_FAIL_DROP_FRAME
+[PC] PARSE_ERR: BAD_LEN_2634219861_RESYNC
+[PC] RX bytes=17, buffer=3681
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] RX bytes=17, buffer=3668
+[PC] PARSE_ERR: BAD_LEN_1437204500_RESYNC
+[PC] RX REQ seq=26624 -> TX b'\xaaU\x01\x02\x00h\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.62, last_img_id=26, cache_img_id=26)
+[PC] RX REQ seq=33 -> TX b'\xaaU\x01\x02!\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.62, last_img_id=26, cache_img_id=26)
+[PC] RX REQ seq=33 -> TX b'\xaaU\x01\x02!\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.62, last_img_id=26, cache_img_id=26)
+[PC] RX REQ seq=33 -> TX b'\xaaU\x01\x02!\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.62, last_img_id=26, cache_img_id=26)
+[PC] RX bytes=9, buffer=9
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] RX bytes=47, buffer=47
+[PC] PARSE_ERR: NO_SOF_DROP_ALL
+[PC] timeout drop img_id=[27]
+[PC] SESSION ABORT: image assembly timeout img_id=[27]
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=241
+[TCP_INJECT][HANDSHAKE] mixed bytes=253
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3516, buffer=3539
+[PC] IMAGE COMPLETE: img_id=27, chunks=145, bytes=37073
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=27 pc_received_len=37073 saved_file_size=DISABLED
+[AI] enqueued img_id=27, bytes=37073[AI] start img_id=27, bytes=37073
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=34 -> TX b'\xaaU\x01\x02"\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.62, last_img_id=27, cache_img_id=26)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+233 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=27 -> YES conf=0.61 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=27, result=YES, conf=0.61
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01"\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=34 -> TX b'\xaaU\x01\x02"\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.61, last_img_id=27, cache_img_id=27)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=141
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT][HANDSHAKE] mixed bytes=181
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3585, buffer=3608
+[PC] IMAGE COMPLETE: img_id=28, chunks=146, bytes=37121
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=28 pc_received_len=37121 saved_file_size=DISABLED
+[AI] enqueued img_id=28, bytes=37121[AI] start img_id=28, bytes=37121
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=35 -> TX b'\xaaU\x01\x02#\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.61, last_img_id=28, cache_img_id=27)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+234 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=28 -> YES conf=0.56 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=28, result=YES, conf=0.56
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01#\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=35 -> TX b'\xaaU\x01\x02#\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=28, cache_img_id=28)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=138
+[TCP_INJECT] buffered raw bytes=76
+[TCP_INJECT][HANDSHAKE] mixed bytes=242
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3424, buffer=3447
+[PC] IMAGE COMPLETE: img_id=29, chunks=145, bytes=36981
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=29 pc_received_len=36981 saved_file_size=DISABLED
+[AI] enqueued img_id=29, bytes=36981[AI] start img_id=29, bytes=36981
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=36 -> TX b'\xaaU\x01\x02$\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.56, last_img_id=29, cache_img_id=28)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+235 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=29 -> YES conf=0.56 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=29, result=YES, conf=0.56
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01$\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=36 -> TX b'\xaaU\x01\x02$\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=29, cache_img_id=29)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=204
+[TCP_INJECT] buffered raw bytes=54
+[TCP_INJECT][HANDSHAKE] mixed bytes=286
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3442, buffer=3465
+[PC] IMAGE COMPLETE: img_id=30, chunks=145, bytes=36999
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=30 pc_received_len=36999 saved_file_size=DISABLED
+[AI] enqueued img_id=30, bytes=36999[AI] start img_id=30, bytes=36999
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=37 -> TX b'\xaaU\x01\x02%\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.56, last_img_id=30, cache_img_id=29)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+236 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=30 -> YES conf=0.56 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=30, result=YES, conf=0.56
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=170
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT][END] mixed bytes=226
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01%\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=37 -> TX b'\xaaU\x01\x02%\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=30, cache_img_id=30)
+[PC][END] PARSE_ERR: BAD_EOF_RESYNC
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[PC][END] RX REQ seq=33590 -> TX b'\xaaU\x01\x026\x83\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=30, cache_img_id=30)
+[PC][END] PARSE_ERR: BAD_EOF_RESYNC
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[TCP_INJECT] buffered raw bytes=64
+[TCP_INJECT] buffered raw bytes=154
+[TCP_INJECT] buffered raw bytes=102
+[TCP_INJECT][RX] mixed bytes=320
+[PC] RX bytes=4096, buffer=4355
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=4614
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=8446
+[PC] RX REQ seq=23353 -> TX b'\xaaU\x01\x029[\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=30, cache_img_id=30)
+[PC] RX REQ seq=59501 -> TX b'\xaaU\x01\x02m\xe8\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.56, last_img_id=30, cache_img_id=30)
+[PC] PARSE_ERR: BAD_EOF_RESYNC
+[PC] RX bytes=4096, buffer=12416
+[PC] SESSION ABORT: image frame handling failed: ValueError: invalid chunk_seq/chunk_total: seq=5, total=2
+[PC] Drop current image data and return to STANDBY
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b"\n)\x8cZe!\tE1\x8bKHC\x97\xadj\xd9H\xb1.M0$\x9bP\xc7\xdd\xac\xe6\xb8\x91\xcd\x02'A+z\xd5\xa8\xad;\x9a@[X@\xa9B\xd01\xc0S\xa9\x88ZZ\x00u\x14\x00\xeaZ\x06\x14\xb4\x00QH\x02\x9c)\x80RP \xa5\xa0\x02\x96\x80\x14R\xd01(\xa0C\xa9)\x0cZ)\x80T3&\xeaB\x16\x04\xd8*CL\x02\x96\x81\x85\x14\x80(\xa0BRS\x18RR\x10b\xab\xcd\x104\x01\x9b,;"
+[PC] HANDSHAKE RX: b'\x1b U\xcby\xb2\xb8j\x00e\xed\xb0\x91x\x15\x834F6\xc1\xa0\x08\xa8\x14\x0cu:\x98\x17\xad-\x8b\x11Z\xf1@\x02\xf4\xa4\x04\x9e@\xa8\xde\xd4\x1aB)\xcb\xa7\n\xa3%\x93-R\x19\x17\x94\xc0\xf4\xad\x9d5(\x03TR\xd4\x80\xb4P\x01E\x00\x14\x84S\x03/Q\x87\xbdb\x9a\x04%-\x00%6\x98\xc9\x91F\xda\xbb\xa6(\xdfH\r\xc4\xe9R\n\x00ZZ\x00J\xef\xb6\xeb\xc6U\xaa\xaaU\x01\x03\x86\x00\x05\x01\x00\x00\x1f'
+[PC] HANDSHAKE RX: b'\x86\x00\x91\x00\x89\xa9\x00\xdaZ\x00Z)\x80\xb4P\x02\xd1H\x02\x8a\x00)(\x00\xa2\x80\x12\x8a\x00(\xa6\x01E\x00\x14P\x01E\x02\x12\x8a\x06\x14P\x01I@\x05\x14\x08JJ\x06\x14P \xa4\xa0bQ@\x05\x14\xc0J(\x01(\xa4\x01I@\x05\x14\x00QL\x02\x8a@%\x14\x00Q@\x05\x14\x01\xc6\xe6\x92\x80\x12\x94S\x18\xb9\xa6P!)i\x00\xa2\x96\x81\x85J\xbb\xcf\x14\xc4Y\x8e\xd5\x9a\xafEd\x07ZB-\xac@T\x81i'
+[PC] HANDSHAKE RX: b'\x8c~)q@\x82\x9d@\x0b@\xa0\x05\xa7P\x02\xd2P\x02\xd2\xd0\x01E\x03\x16\x8a`\x14R\x10Q@\x0bE \x1c)h\x01(\xa6\x03\xa9(\x00\xa2\x80\n(\x18\xa2\x8a\x04\x14P0\xa2\x81\x05\x14\x86%%\x02\nJ\x00)\xa6\x98\x10H\x99\xaa\xc6-\xa6\x90\x12\xac\xbca\xab\'R\xc1l\xd03:\x9d\x8a@<!\xab6\xd0\x17=)\x88\xdc\xb7\x84 \xab"\x81\x8f\x02\x97\x14\x00\xd2\x95\x1bD\r\x00Dm\x97\xd2\x9f\x14[(\x02'
+[PC] HANDSHAKE RX: b'\xc04\xb9\xa0\x12 \xca5U\xaa\xaaU\x01\x03\x87\x00\x05\x01\x00\x00\x1f\x87\x00\x91\x00\x05\xcd\x14\x00f\x8a@\x14\x94\x01B\xfd\xf0+\r\xa9\x80\xdcR\x1a`%% \x1c\x1b\x15f\xc5\xc8\x97\x8a`tQt\xa9i\x00\xb4\xb4\x00\x95\x13u\xa0\x04\xa5\xa4\x01KLAK@\xc2\x8a@-%\x00\x14\x94\x00Q@\x05\x14\x00RS\x10R\xd0\x01E\x00\x14\x94\x0cZJ\x00)(\x01i(\x10\x94P1(\xa0\x02\x8a\x00J(\x00\xa4\xa0\x02'
+[PC] HANDSHAKE RX: b'\x92\x80\n(\x01(\xa0\x02\x92\x80\n(\x00\xa2\x80\x12\x8a`\x06\x8a@\x14P\x01E 8\xcaJ`6\x9b\x9a\x00\\\xd2\xd3\x00\xa34\x868T\x8b\x137J\x04[\x86\xc4\x9e\xb5\xa1\x05\x98^\xc2\x81\x16\xd20)\xe0P\x86:\x8ab\x1dK@\x05-0\n)\x00\xeaZ\x00(\xa0\x05\x14\xb4\x0cZZ\x04%%1\x85\x14\x84\x14\xb4\x86\x14\xb4\xc4(\xa5\xa0\x04\xa5\x14\x86\x14\x94\xc0Z)\x00\xb4P\x02\xd1LAI@\xc5\xa2\x81\tE'
+[PC] HANDSHAKE RX: b'\x03\nJ\x04\x14\x94\x00RP\x03qM)@\xca\xb3\xc7\xc5b\\\xa3\x03\xcd1\x15L@\xc8\xd2U\xaa\xaaU\x01\x03\x88\x00\x05\x01\x00\x00\x1f\x88\x00\x91\x00jH\x86M!\x9a\xd0\xda\xe5*{x\xbc\xb6\xa0\r\x14\xe9N4\x84\x03\x8a~h\x18\xb4\x94\x00b\x8cP\x01I@\x0c-\x8a\x89\xae\xb6\xd3\x01V\xedMI\xe7\xadH\x85\xf3\x97\xd6\xa2\x96\xe4(\xa0fE\xe4\xfb\xda\xa9\xe6\xa8\x04\xcd\x14\x80m%\x02\x12\xac\xd9\xbe\xd7\xe6\x98\x1d'
+[PC] HANDSHAKE RX: b'\x14\r\x95\xa9\xc5 \x16\x96\x81\x8d&\xa34\x80JZ`-- \nZ\x00(\xa0\x02\x8a\x00))\x80QH\x02\x92\x80\n(\x00\xa2\x98\x82\x8aC\n)\x80RP\x01E\x00\x14\x94\x00Q@\x84\xa2\x90\x05%P\x05%!\x85\x14\x00\x94P\x01I@\x05%\x00-%\x00\x14P\x01I@\x05-\x00%\x14\x00Q@\x82\x96\x90\xce2\x92\xa8\x08\xcd6\x90\xc3\x14\xea\x00v\xd3R\xc7l\xcf\xda\x81\x1a6\xfaw\xf7\xaa\xf4v\x8a\xb4\x08\xb0'
+[PC] HANDSHAKE RX: b'\xb1\xe2\x9e\x050\x1d\x8a\\P0\xa2\x98\x85\xa2\x90\x0bE\x00\x14\n\x00\x92\x92\x81\x8bE\x00-\x14\x00\xb4\x94\x00Q@\x05\x14\x84-%0\nZ\x06(\xa5\x95\xd5]\xd2U\xaa\xaaU\x01\x03\x89\x00\x05\x01\x00\x00\x1f\x89\x00\x91\x004\x00R\xd0\x02Q@\x05-\x00\x14\xb4\x00R\xd2\x10\x94\x94\xc0Z(\x18QHBQ@\x05\x14\xc0JJ\x06%- \x1a\xeb\x91T\xa7\xb5\r@\x8c{\xabC\x19\xe9\xc56\xd9~~h\x03\xa0\x8d~Z'
+[PC] HANDSHAKE RX: b'v\xca\x00\x01+S\xa3\xe6\x81\x8f\xa4\xa0C\xa8\xcd\x03\x16\x8a\x00)\r +\xdc6\xd5\xac;\x89\xdb\x7fZ\xa0!\x17\x0c;\xd4\xa2\xed\xbdh\x01\xdflj\x8d\xe7&\x80"&\x92\x80\x12\x92\x80\nJ\x046\x9f\x19\xe6\x90\x1d%\x89\xfd\xd8\xab\x82\x81\x8e\xa2\x80\x18\xd4\xca\x04\x14\xb4\x0cZZ\x00(\xa4\x02\xd1L\x02\x92\x80\n)\x00Q@\tE0\nJ@\x14\xb4\xc0(\xa0\x02\x8a\x04\x14\x94\x0c(\xa0\x02\x92\x98\x05\x14\x80J(\x01('
+[PC] HANDSHAKE RX: b'\xa0\x02\x92\x80\n(\x00\xa4\xa0\x02\x92\x90\x05\x14\xc0J(\x00\xa2\x80\n(\x00\xa4\xa0B\xd2P0\xa2\x80\x16\x8a@q\x86\x90\xd3\x18\xdcQ\xb74\x01$v\xec\xdd\xaa\xdcz{\x1e\xd4\x08\xb9\x1d\x80^\xd5n;e^\xd4\x01i\x1b\x07^uU\xaa\xaaU\x01\x03\x8a\x00\x05\x01\x00\x00\x1f\x8a\x00\x91\x00R\x9d\xb6\x98\x85\xc5\x14\x00\xb4\x94\x00\x94\xb4\x00\xb4P\x01E\x00--\x00-\x14\x00Q@\x0bK\x9a\x06%\x14\x00\xb4\x94\x00Q@\x0b'
+[PC] HANDSHAKE RX: b'E\x00\x14P\x03\xa8\xa0\x02\x96\x98\x84\xa5\xa4\x01E\x00\x14R\x01iE1\x88h\xa0\x02\x8a\x04\x14\xb4\x86\x14\x94\x00RS\x10Q@\tK@\xc2\x9aE\x02+\xcd\x00z\xcb\x96\xd7\xcal\x8a\x06[\xb5\xb8\xec\xd5~\x90\x8485\x1ev\x9a\x00\x91f\xa9\x94\xe6\x81\x8e\xa6\x1e(\x11\x19\x9b\x14\x0b\x80i\x81 \x92\x90\xca(\x03:\xf6\xe4c\x00\xd6;\x9c\xd01\x94\xb4\x00\xb4\xb4\x00\x94R\x10\x94\x94\xc6\x14R\x01\xb5-\xba\xee|S\x11\xd2'
+[PC] HANDSHAKE RX: b'Z\xae\x10U\xa1H\x05\xa5\xa0c\x1e\xa3\xa0\x02\x96\x80\x16\x96\x80\x16\x8a\x00(\xa0AE!\x85\x14\xc0J(\x00\xa4\xa0\x02\x8a\x00(\xa0AE\x03\n(\x10QLbQHAE\x03\nJ\x00)(\x00\xa2\x80\x12\x92\x80\x16\x92\x98\x05\x14\x80J(\x00\xa4\xa0AE\x00%\x14\x00R\xd0\x02R\xd01\x99Z\xaf2U\xaa\xaaU\x01\x03\x8b\x00\x05\x01\x00\x00\x1f\x8b\x00\x91\x00(\xa0aE\x02\n)\x01\xce\xff\x00g58i\xa6\x80&]'
+[PC] HANDSHAKE RX: b'2\xa5[\x05\x14\xc4XKe\x15(\x8f\x14\x00\xbbi\xe0S\x18\xf1N\xa0\x02\x93\x14\x00RP\x02R\xd0 \xa2\x81\x85-\x02\x16\x92\x80\x16\x96\x98\xc2\x92\x90\x85\xa5\xa0aE\x02\nJ\x06\x14\xb4\x08AK@\xc2\x8aB\x16\x96\x98\n)h\x18\x94P \xa2\x80\n(\x18S\xa9\x08\r%0\nZ\x00(\xa4\x01E\x03\nJ`\x14P \xa5\xa40\xc5\x14\xc0\x08\xa8$\x8f4\x80\xa3,;\x0eE:\x19\xc8\xe0\xd3\x11`8\xa984\x86'
+[PC] HANDSHAKE RX: b'V\x97\xe5<S\xe1\xb9\xeci\x88\xb5\xe6\x8a\x8aY\xb8\xa0fu\xc5\xcf\xa5R\xfbKg\xad\x02%\x17\xac;\xd25\xeb\x1ac+\xbc\x9b\xaa:B\n(\x18\xb4\xb9\xa4!3E1\x89E \x12\x8a\x04%X\xb4\x19\x92\x81\x9d$\x1fv\xa6\xa4!ii\x8c\x8d\x8d2\x80\x16\x96\x90\x05:\x80\x16\x8a\x00(\xa0\x02\x8a\x00)(\x00\xa4\xa6 \xa2\x90\xc4\xa2\x98\x0bE\x02\x16\x92!m]\xd5U\xaa\xaaU\x01\x03\x8c\x00\x05\x01\x00\x00\x1f\x8c\x00'
+[PC] HANDSHAKE RX: b'\x91\x00\x81\x85%\x00\x14S\x00\xa4\xa4\x02\xd2S\x00\xa4\xa4\x02\xd2P\x01IL\x02\x8a\x00J)\x00RR\x00\xa2\x98\x05%\x00\x14P!(\xa0b\xd1@\tE\x00\x14P\x01E$!h\xa61\x9b(\xd9@\x80\xad7m0\x17\x14\xb8\xa0\x02\x96\x80\x16\x96\x81\x8bE\x02\x10\xd3h\x00\xa5\xa0\x02\x8a\x00Z(\x01i)\x80QH\x02\x8a\x00Z(\x18R\xd3\x00\xa6\xd2\x10\xb4\x94\x00\xb4P\x01KL\x02\x96\x81\x8e\x14\xa6\x90\r\xa5\xa0AI'
+[PC] HANDSHAKE RX: b"@\x0bE\x03\nZ\x04:\x9b@\xc2\x8aB\n)\x8c(\xa0\x02\x8a\x00(\xa0B\xd3\xa8\x18RR\x00\xa6\xd0\x04n\xb9\xaa2\xc5\xe9LE)\xa4x\xfaT\xb6\x97\xbd\x8d\x00hedZ\xcb\xb9\x7f-\xf8\xa0\x08\xc5\xe3\nW\xbb'\xbd\x00Ty3Q\xd01h\xa0\x02\x8a\x18\x05-!\x05\x14\x0cZJ`\x14R\x00\xa4\xa0AV-\x1b\x0f@\x1d\x1d\xbf\xdd\xa9\xc5\x03\x1dA\xa0\x08Z\x92\x90\x05-0\x16\x96\x90\x0bE\x00-\x14\x00Q"
+[PC] HANDSHAKE RX: b'@\t\xc9o\xde\xaaU\xaa\xaaU\x01\x03\x8d\x00\x05\x01\x00\x00\x1f\x8d\x00\x91\x00E\x00%\x14\xc0J(\x00\xa2\x80\nZ\x04\x14P\x02QLaE \nJ\x00(\xa0\x02\x8a`%% \n(\x00\xa2\x80\x12\x8a\x00)(\x00\xa2\x80\nJ\x04\x14\x94\x0c)h\x10\x94S\x18R\xd2\x00\xa4\xa0\x02\x8a@-\x14\xc0Z(\x10\x94\xda\x00ZJ\x06%(\xaa\x10\xeaZC\x16\x8aB\x12\x9aj\x86%\x15"\nu\x00\x14\x94\xc0Z(\x01(\xa0'
+[PC] HANDSHAKE RX: b'\x05\xa5\xa0bQ@\x05\x14\xc4&ii\x00Q@\xc5\xa2\x80\x12\x96\x80\nZ\x00p4\x13@\x84\xa5\xa0aE\x00\x14P!sFh\x01\xc2\x92\x81\x89E\x00-% \x16\x8ab\x16\x92\x90\x05\x14\xc6-\x19\xa0\x02\x92\x80\x12\x96\x80\x1aj\x17Z\x04T\xb8\xb7\xde+9\xed\xda3\xc5\x009.Y:\xd4\x173y\x94\x86W\xcd\x14\xc0)i\x08Z(\x00\xa4\xa0\x02\x8a\x06-\x14\x00\xb4R\x00\xa2\x98\tI@\x84\xabvK\x99\x050:'
+[PC] HANDSHAKE RX: b'8xZ\x9a\x90\xc5\xa4=(\x02\x12h\xa0\x02\x9d@\x0bK@\x0bE\x00\x14\x96+R7U\xaa\xaaU\x01\x03\x8e\x00\x05\x01\x00\x00\x1f\x8e\x00\x91\x00R\x00\xa2\x80\nJ`\x14P!(\xa0bR\xd0\x01E\x02\n(\x00\xa2\x98\xc2\x8aB\x12\x8a\x06\x14P\x01IHAE0\x12\x8ac\nJB\n)\x8c))\x00Q@\tE \n)\x88(\xa0\x04\xa2\x81\x8bE\x00%\x14\x00Q@\x85\xa2\x81\x8f\xa4\xa0\x02\x99@\x85\xa6\xd0\x02R'
+[PC] HANDSHAKE RX: b'\xd3\x01\xc2\x9fH\x02\x92\x80\na\xa0bQT \xa5\xa4\x01E\x03\x16\x92\x82B\x8a\x06-\x14\x00\x94P\x01I@\xc7Q@\x82\x92\x81\x85-!\x05\x14\xc0Z)\x0cp\xa2\x98\tK@\x05-\x00\x14P\x01E\x008Q@\x84\xa2\x81\x85\x14\x08)i\x00Q@\x05\x14\x00RP\x02\xd2\xd00\xa2\x80\x12\x9aE0\x1aR\xa2x\x01\x1d(\x03>\xe6\xcb\xb8\xac\xb9ad\xebHD4S\x18R\xe6\x80\x174\xb9\xa4\x02Q@\x0bIL\x05'
+[PC] HANDSHAKE RX: b'\xa0R\x01ii\x80\x94\x94\x08)(\x01Ts[:l\\f\x90\xcdt\x14\xfa\x00ZG\xe9@\x10Q@\x0e\xa2\x80\x1dK@\x05-\x00%\x14\x00\xcf\x03\x12{U\xaa\xaaU\x01\x03\x8f\x00\x05\x01\x00\x00\x1f\x8f\x00\x91\x00\xb4\x94\x00Q@\tE\x02\x12\x8a\x06\x14\xb4\x00Q@\x82\x8a\x06%\x14\x00Q@\x82\x8ac\x12\x8a\x04\x14R\x18RP\x01E\x00\x14\x94\x00\x94\xb4\x00\x94R\x10QL\x04\xa2\x81\x85\x14\x80(\xa6\x02Q@\x0bI@'
+[PC] HANDSHAKE RX: b'\x05\x14\x00\xb4R\x00\xa2\x80$\xa4\xa6\x01M4\x08J1@\tE1\x8a)\xd4\x80Z)\x88)\xa6\x90\r\xc5%0\nZ\x00(\xa0\x02\x8a`\x14P\x01E \nJc\x16\x96\x90\x84\xa4\x14\xc0Z)\x00Q@\x0bE\x00\x14\xecR\x18\xb4\xda`-\x14\x08ZJ\x06-\x14\x00R\xd0\x03\x85\x06\x81\r\xa2\x81\x8bE1\x05\x14\x86-% \x16\x8a\x04\x14\xb4\xc0Z(\x01(\xa0aE \nJ\x00c.j\xac\xf6\xca\xdd\xa8\x11\x91u'
+[PC] HANDSHAKE RX: b'g\x8eEQe+L\x04\xa2\x90\xc2\x96\x80\n(\x00\xa5\xa6 \xa5\xa41h\xa6\x02Q@\x82\x92\x90\xc9#\x195\xbd`\xb8\x8d~\x94\x01\xa0)\xd4\x00\xeac\xd0\x044P\x02\xd2\xd0!ih\x18\xb4P\x01KH\x04\xa2\x8d\xe7J\xdeU\xaa\xaaU\x01\x03\x90\x00M\x00\x00\x00\x1f\x90\x00\x91\x00\x98\tE \nJ\x04\x14S\x18Q@\x0bE\x00\x14P\x01I@\x05-\x00%\x14\x00\x94S\x00\xa2\x90\tE\x00\x14P\x01I@\tK@'
+[PC] HANDSHAKE RX: b'\tE\x00\x14P\x02Q@\x05\x14\x00Q@\x05\x14\x08(\xa0aE\x00\x14\xb4\x00QJ\xe0\x7f\xff\xd9c\xec\xbd\x19U\xaa[CAP_EVT] img_id=31 done=1 error=0 timeout=0 soi=0 eoi=36934 jpg_len=36936\r\n[MCU_ACCOUNT] im'
+[PC] HANDSHAKE RX: b'g_id=31 capture_len=36936 tx_len=36936 tx_status=0 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err'
+[PC] HANDSHAKE RX: b'_stop=0 soi=0 eoi=36934\r\n\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC] HANDSHAKE RX: b'\xaaU\x01\x01&\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaaTX_DONE\r\n'
+[PC] HANDSHAKE RX: b'[TRANSFER_FAILED] img_id=31 capture_len=36936\r\n'
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=238
+[TCP_INJECT] buffered raw bytes=26
+[TCP_INJECT][HANDSHAKE] mixed bytes=292
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3462, buffer=3485
+[PC] IMAGE COMPLETE: img_id=31, chunks=145, bytes=37019
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=31 pc_received_len=37019 saved_file_size=DISABLED
+[AI] enqueued img_id=31, bytes=37019[AI] start img_id=31, bytes=37019
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=39 -> TX b"\xaaU\x01\x02'\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa" (conf=0.56, last_img_id=31, cache_img_id=30)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+237 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=31 -> YES conf=0.60 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=31, result=YES, conf=0.60
+[PC] END_HANDSHAKE RX: b"\xaaU\x01\x01'\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa"
+[PC][END] RX REQ seq=39 -> TX b"\xaaU\x01\x02'\x00\x03\x00\x00\x00YES#w@\xe3U\xaa" (conf=0.60, last_img_id=31, cache_img_id=31)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=64
+[TCP_INJECT] buffered raw bytes=118
+[TCP_INJECT] buffered raw bytes=76
+[TCP_INJECT][HANDSHAKE] mixed bytes=258
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3247, buffer=3270
+[PC] IMAGE COMPLETE: img_id=32, chunks=144, bytes=36825
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=32 pc_received_len=36825 saved_file_size=DISABLED
+[AI] enqueued img_id=32, bytes=36825[AI] start img_id=32, bytes=36825
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=40 -> TX b'\xaaU\x01\x02(\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.60, last_img_id=32, cache_img_id=31)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+238 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=32 -> YES conf=0.59 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=32, result=YES, conf=0.59
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01(\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=40 -> TX b'\xaaU\x01\x02(\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.59, last_img_id=32, cache_img_id=32)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=168
+[TCP_INJECT] buffered raw bytes=12
+[TCP_INJECT] buffered raw bytes=64
+[TCP_INJECT][HANDSHAKE] mixed bytes=272
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[TCP_INJECT] buffered raw bytes=28
+[TCP_INJECT] buffered raw bytes=180
+[TCP_INJECT] buffered raw bytes=56
+[TCP_INJECT][RX] mixed bytes=264
+[PC] RX bytes=3206, buffer=3229
+[PC] IMAGE COMPLETE: img_id=33, chunks=144, bytes=36784
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=33 pc_received_len=36784 saved_file_size=DISABLED
+[AI] enqueued img_id=33, bytes=36784[AI] start img_id=33, bytes=36784
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=41 -> TX b'\xaaU\x01\x02)\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.59, last_img_id=33, cache_img_id=32)
+[PC][END] PARSE_ERR: BAD_EOF_RESYNC
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+239 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=33 -> YES conf=0.55 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=33, result=YES, conf=0.55
+[PC][END] IGNORE frame.type=0x03, seq=29237
+[PC][END] PARSE_ERR: BAD_VER_127_RESYNC
+[PC][END] IGNORE frame.type=0x03, seq=15594
+[PC][END] PARSE_ERR: BAD_LEN_2000001_RESYNC
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01)\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] PARSE_ERR: CRC_FAIL_DROP_FRAME
+[PC][END] PARSE_ERR: CRC_FAIL_DROP_FRAME
+[PC][END] RX REQ seq=41 -> TX b'\xaaU\x01\x02)\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.55, last_img_id=33, cache_img_id=33)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] Serial disconnected or unavailable: SerialException: ClearCommError failed (PermissionError(13, '拒绝访问。', None, 5))
+[PC] Experiment session ended; full log has been saved
+[PC] Serial closed

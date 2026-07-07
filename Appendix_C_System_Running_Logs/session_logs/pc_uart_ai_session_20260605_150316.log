@@ -1,0 +1,13 @@
+[LOG] Session log: C:\Users\linzh\Desktop\Final_Project\Communication_module\session_logs\pc_uart_ai_session_20260605_150316.log
+[PC] Python executable: C:\Users\linzh\yolo_mvp\venv\Scripts\python.exe
+[AI] importing modules... please wait
+[AI] import finished in 27.3s
+[AI] loading model... please wait
+[AI] loaded model in 0.1s: C:\Users\linzh\Desktop\Final_Project\runs_mvp\insect_det_v7_mvp3\weights\best.pt
+[PC] Auto selected serial port: COM9
+[PC] Opened COM9 @ 115200
+[PC] Save dir: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output
+[PC] Waiting for MCU STANDBY...
+[PC] Serial disconnected or unavailable: SerialException: GetOverlappedResult failed (PermissionError(13, '拒绝访问。', None, 5))
+[PC] Experiment session ended; full log has been saved
+[PC] Serial closed

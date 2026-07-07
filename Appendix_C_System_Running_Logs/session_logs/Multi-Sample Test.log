@@ -1,0 +1,812 @@
+[LOG] Session log: C:\Users\linzh\Desktop\Final_Project\Communication_module\session_logs\pc_uart_ai_session_20260604_155603.log
+[PC] Python executable: C:\Users\linzh\yolo_mvp\venv\Scripts\python.exe
+[AI] importing modules... please wait
+[AI] import finished in 3.4s
+[AI] loading model... please wait
+[AI] loaded model in 0.0s: C:\Users\linzh\Desktop\Final_Project\runs_mvp\insect_det_v7_mvp3\weights\best.pt
+[PC] Auto selected serial port: COM9
+[PC] Opened COM9 @ 115200
+[PC] Save dir: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] IMAGE COMPLETE: img_id=1, chunks=148, bytes=37711
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=1 pc_received_len=37711 saved_file_size=DISABLED
+[AI] enqueued img_id=1, bytes=37711[AI] start img_id=1, bytes=37711
+
+[PC] Waiting for TX_DONE...
+[PC] END_HANDSHAKE RX: b'mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=37709\r\n\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=1, cache_img_id=None)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+27 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=1 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=1, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x00\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=0 -> TX b'\xaaU\x01\x02\x00\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=1, cache_img_id=1)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=961, buffer=984
+[PC] IMAGE COMPLETE: img_id=2, chunks=136, bytes=34709
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=2 pc_received_len=34709 saved_file_size=DISABLED
+[AI] enqueued img_id=2, bytes=34709[AI] start img_id=2, bytes=34709
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=1 -> TX b'\xaaU\x01\x02\x01\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=2, cache_img_id=1)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+28 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=2 -> YES conf=0.62 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=2, result=YES, conf=0.62
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x01\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=1 -> TX b'\xaaU\x01\x02\x01\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.62, last_img_id=2, cache_img_id=2)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=2636, buffer=2659
+[PC] IMAGE COMPLETE: img_id=3, chunks=142, bytes=36258
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=3 pc_received_len=36258 saved_file_size=DISABLED
+[AI] enqueued img_id=3, bytes=36258[AI] start img_id=3, bytes=36258
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=2 -> TX b'\xaaU\x01\x02\x02\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.62, last_img_id=3, cache_img_id=2)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+29 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=3 -> YES conf=0.61 reason=YES: matched=3 >= 1, conf>=0.45
+[AI] done img_id=3, result=YES, conf=0.61
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x02\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=2 -> TX b'\xaaU\x01\x02\x02\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.61, last_img_id=3, cache_img_id=3)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3118, buffer=3141
+[PC] IMAGE COMPLETE: img_id=4, chunks=144, bytes=36698
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=4 pc_received_len=36698 saved_file_size=DISABLED
+[AI] enqueued img_id=4, bytes=36698[AI] start img_id=4, bytes=36698
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=3 -> TX b'\xaaU\x01\x02\x03\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.61, last_img_id=4, cache_img_id=3)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+30 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=4 -> YES conf=0.62 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=4, result=YES, conf=0.62
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x03\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=3 -> TX b'\xaaU\x01\x02\x03\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.62, last_img_id=4, cache_img_id=4)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3099, buffer=3122
+[PC] IMAGE COMPLETE: img_id=5, chunks=144, bytes=36679
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=5 pc_received_len=36679 saved_file_size=DISABLED
+[AI] enqueued img_id=5, bytes=36679[AI] start img_id=5, bytes=36679
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=4 -> TX b'\xaaU\x01\x02\x04\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.62, last_img_id=5, cache_img_id=4)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+31 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=5 -> YES conf=0.61 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=5, result=YES, conf=0.61
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x04\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=4 -> TX b'\xaaU\x01\x02\x04\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.61, last_img_id=5, cache_img_id=5)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4000, buffer=4023
+[PC] IMAGE COMPLETE: img_id=6, chunks=147, bytes=37517
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=6 pc_received_len=37517 saved_file_size=DISABLED
+[AI] enqueued img_id=6, bytes=37517[AI] start img_id=6, bytes=37517
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=5 -> TX b'\xaaU\x01\x02\x05\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.61, last_img_id=6, cache_img_id=5)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+32 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=6 -> YES conf=0.54 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=6, result=YES, conf=0.54
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x05\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=5 -> TX b'\xaaU\x01\x02\x05\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.54, last_img_id=6, cache_img_id=6)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=762, buffer=1003
+[PC] IMAGE COMPLETE: img_id=7, chunks=150, bytes=38312
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=7 pc_received_len=38312 saved_file_size=DISABLED
+[AI] enqueued img_id=7, bytes=38312[AI] start img_id=7, bytes=38312
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=6 -> TX b'\xaaU\x01\x02\x06\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.54, last_img_id=7, cache_img_id=6)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+33 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=7 -> YES conf=0.66 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=7, result=YES, conf=0.66
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x06\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=6 -> TX b'\xaaU\x01\x02\x06\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.66, last_img_id=7, cache_img_id=7)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=4096, buffer=4337
+[PC] RX bytes=4096, buffer=4278
+[PC] RX bytes=4096, buffer=4219
+[PC] RX bytes=4096, buffer=4160
+[PC] RX bytes=4096, buffer=4101
+[PC] RX bytes=4096, buffer=4319
+[PC] RX bytes=3674, buffer=3838
+[PC] IMAGE COMPLETE: img_id=8, chunks=249, bytes=63721
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=8 pc_received_len=63721 saved_file_size=DISABLED
+[AI] enqueued img_id=8, bytes=63721[AI] start img_id=8, bytes=63721
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=7 -> TX b'\xaaU\x01\x02\x07\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.66, last_img_id=8, cache_img_id=7)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+33 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=8 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=8, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x07\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=7 -> TX b'\xaaU\x01\x02\x07\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=8, cache_img_id=8)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=2536, buffer=2618
+[PC] IMAGE COMPLETE: img_id=9, chunks=127, bytes=32377
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=9 pc_received_len=32377 saved_file_size=DISABLED
+[AI] enqueued img_id=9, bytes=32377[AI] start img_id=9, bytes=32377
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=8 -> TX b'\xaaU\x01\x02\x08\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=9, cache_img_id=8)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+34 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=9 -> YES conf=0.62 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=9, result=YES, conf=0.62
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x08\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=8 -> TX b'\xaaU\x01\x02\x08\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.62, last_img_id=9, cache_img_id=9)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=3411, buffer=3552
+[PC] IMAGE COMPLETE: img_id=10, chunks=115, bytes=29406
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=10 pc_received_len=29406 saved_file_size=DISABLED
+[AI] enqueued img_id=10, bytes=29406[AI] start img_id=10, bytes=29406
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=9 -> TX b'\xaaU\x01\x02\t\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.62, last_img_id=10, cache_img_id=9)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+34 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=10 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=10, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\t\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=9 -> TX b'\xaaU\x01\x02\t\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=10, cache_img_id=10)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=764, buffer=846
+[PC] IMAGE COMPLETE: img_id=11, chunks=121, bytes=30729
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=11 pc_received_len=30729 saved_file_size=DISABLED
+[AI] enqueued img_id=11, bytes=30729[AI] start img_id=11, bytes=30729
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=10 -> TX b'\xaaU\x01\x02\n\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=11, cache_img_id=10)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+35 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=11 -> YES conf=0.50 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=11, result=YES, conf=0.50
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\n\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=10 -> TX b'\xaaU\x01\x02\n\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.50, last_img_id=11, cache_img_id=11)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] IMAGE COMPLETE: img_id=12, chunks=118, bytes=30198
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=12 pc_received_len=30198 saved_file_size=DISABLED
+[AI] enqueued img_id=12, bytes=30198[AI] start img_id=12, bytes=30198
+
+[PC] Waiting for TX_DONE...
+[PC] END_HANDSHAKE RX: b'g_id=12 capture_len=30198 tx_len=30198 tx_status=0 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err'
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+36 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=12 -> YES conf=0.61 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=12, result=YES, conf=0.61
+[PC] END_HANDSHAKE RX: b'_stop=0 soi=0 eoi=30196\r\n\xaaU\x01\x01\x0b\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=11 -> TX b'\xaaU\x01\x02\x0b\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.61, last_img_id=12, cache_img_id=12)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=1591, buffer=1673
+[PC] IMAGE COMPLETE: img_id=13, chunks=124, bytes=31493
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=13 pc_received_len=31493 saved_file_size=DISABLED
+[AI] enqueued img_id=13, bytes=31493[AI] start img_id=13, bytes=31493
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=12 -> TX b'\xaaU\x01\x02\x0c\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.61, last_img_id=13, cache_img_id=12)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+37 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=13 -> YES conf=0.70 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=13, result=YES, conf=0.70
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x0c\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=12 -> TX b'\xaaU\x01\x02\x0c\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.70, last_img_id=13, cache_img_id=13)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=3447, buffer=3529
+[PC] IMAGE COMPLETE: img_id=14, chunks=130, bytes=33223
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=14 pc_received_len=33223 saved_file_size=DISABLED
+[AI] enqueued img_id=14, bytes=33223[AI] start img_id=14, bytes=33223
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=13 -> TX b'\xaaU\x01\x02\r\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.70, last_img_id=14, cache_img_id=13)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+38 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=14 -> YES conf=0.68 reason=YES: matched=2 >= 1, conf>=0.45
+[AI] done img_id=14, result=YES, conf=0.68
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\r\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=13 -> TX b'\xaaU\x01\x02\r\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.68, last_img_id=14, cache_img_id=14)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3557, buffer=3580
+[PC] IMAGE COMPLETE: img_id=15, chunks=145, bytes=37114
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=15 pc_received_len=37114 saved_file_size=DISABLED
+[AI] enqueued img_id=15, bytes=37114[AI] start img_id=15, bytes=37114
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=14 -> TX b'\xaaU\x01\x02\x0e\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.68, last_img_id=15, cache_img_id=14)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+38 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=15 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=15, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x0e\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=14 -> TX b'\xaaU\x01\x02\x0e\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=15, cache_img_id=15)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=505, buffer=746
+[PC] IMAGE COMPLETE: img_id=16, chunks=149, bytes=38074
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=16 pc_received_len=38074 saved_file_size=DISABLED
+[AI] enqueued img_id=16, bytes=38074[AI] start img_id=16, bytes=38074
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=15 -> TX b'\xaaU\x01\x02\x0f\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=16, cache_img_id=15)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+38 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=16 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=16, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x0f\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=15 -> TX b'\xaaU\x01\x02\x0f\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=16, cache_img_id=16)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=1456, buffer=1697
+[PC] IMAGE COMPLETE: img_id=17, chunks=153, bytes=38941
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=17 pc_received_len=38941 saved_file_size=DISABLED
+[AI] enqueued img_id=17, bytes=38941[AI] start img_id=17, bytes=38941
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=16 -> TX b'\xaaU\x01\x02\x10\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=17, cache_img_id=16)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+38 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=17 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=17, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x10\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=16 -> TX b'\xaaU\x01\x02\x10\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=17, cache_img_id=17)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=1196, buffer=1219
+[PC] IMAGE COMPLETE: img_id=18, chunks=137, bytes=34921
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=18 pc_received_len=34921 saved_file_size=DISABLED
+[AI] enqueued img_id=18, bytes=34921[AI] start img_id=18, bytes=34921
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=17 -> TX b'\xaaU\x01\x02\x11\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=18, cache_img_id=17)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+38 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=18 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=18, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x11\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=17 -> TX b'\xaaU\x01\x02\x11\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=18, cache_img_id=18)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=2905, buffer=2928
+[PC] IMAGE COMPLETE: img_id=19, chunks=143, bytes=36504
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=19 pc_received_len=36504 saved_file_size=DISABLED
+[AI] enqueued img_id=19, bytes=36504[AI] start img_id=19, bytes=36504
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=18 -> TX b'\xaaU\x01\x02\x12\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=19, cache_img_id=18)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+38 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=19 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=19, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x12\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=18 -> TX b'\xaaU\x01\x02\x12\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=19, cache_img_id=19)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=524, buffer=765
+[PC] IMAGE COMPLETE: img_id=20, chunks=149, bytes=38093
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=20 pc_received_len=38093 saved_file_size=DISABLED
+[AI] enqueued img_id=20, bytes=38093[AI] start img_id=20, bytes=38093
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=19 -> TX b'\xaaU\x01\x02\x13\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=20, cache_img_id=19)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+39 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=20 -> YES conf=0.52 reason=YES: matched=1 >= 1, conf>=0.45
+[AI] done img_id=20, result=YES, conf=0.52
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x13\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=19 -> TX b'\xaaU\x01\x02\x13\x00\x03\x00\x00\x00YES#w@\xe3U\xaa' (conf=0.52, last_img_id=20, cache_img_id=20)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=442, buffer=683
+[PC] IMAGE COMPLETE: img_id=21, chunks=149, bytes=38011
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=21 pc_received_len=38011 saved_file_size=DISABLED
+[AI] enqueued img_id=21, bytes=38011[AI] start img_id=21, bytes=38011
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=20 -> TX b'\xaaU\x01\x02\x14\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.52, last_img_id=21, cache_img_id=20)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+39 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=21 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=21, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x14\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=20 -> TX b'\xaaU\x01\x02\x14\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=21, cache_img_id=21)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=2675, buffer=2698
+[PC] IMAGE COMPLETE: img_id=22, chunks=142, bytes=36295
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=22 pc_received_len=36295 saved_file_size=DISABLED
+[AI] enqueued img_id=22, bytes=36295[AI] start img_id=22, bytes=36295
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=21 -> TX b'\xaaU\x01\x02\x15\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=22, cache_img_id=21)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+39 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=22 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=22, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x15\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=21 -> TX b'\xaaU\x01\x02\x15\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=22, cache_img_id=22)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=3867, buffer=3890
+[PC] IMAGE COMPLETE: img_id=23, chunks=147, bytes=37382
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=23 pc_received_len=37382 saved_file_size=DISABLED
+[AI] enqueued img_id=23, bytes=37382[AI] start img_id=23, bytes=37382
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=22 -> TX b'\xaaU\x01\x02\x16\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=23, cache_img_id=22)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+39 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=23 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=23, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x16\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=22 -> TX b'\xaaU\x01\x02\x16\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=23, cache_img_id=23)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=705, buffer=946
+[PC] IMAGE COMPLETE: img_id=24, chunks=150, bytes=38253
+[PC] image reassembled, save disabled
+[PC_ACCOUNT] img_id=24 pc_received_len=38253 saved_file_size=DISABLED
+[AI] enqueued img_id=24, bytes=38253[AI] start img_id=24, bytes=38253
+
+[PC] Waiting for TX_DONE...
+[PC][END] RX REQ seq=23 -> TX b'\xaaU\x01\x02\x17\x00\x04\x00\x00\x00BUSY6D\x0f\xf9U\xaa' (conf=0.00, last_img_id=24, cache_img_id=23)
+Results saved to [1mC:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict[0m
+39 labels saved to C:\Users\linzh\Desktop\Final_Project\Ai_module\ai_outputs\uart_ai_predict\labels
+[AI] updated img_id=24 -> NO conf=0.00 reason=NO: matched=0 < 1, max_conf=0.000, conf>=0.45
+[AI] done img_id=24, result=NO, conf=0.00
+[PC] END_HANDSHAKE RX: b'\xaaU\x01\x01\x17\x00\x01\x00\x00\x00?\xb0\xc2ddU\xaa'
+[PC][END] RX REQ seq=23 -> TX b'\xaaU\x01\x02\x17\x00\x03\x00\x00\x00NO!L:\xcd\xbeU\xaa' (conf=0.00, last_img_id=24, cache_img_id=24)
+[PC] END_HANDSHAKE RX: b'TX_DONE\r\n'
+[ACCOUNT] MCU account missing
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...

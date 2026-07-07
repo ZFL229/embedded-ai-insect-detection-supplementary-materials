@@ -1,0 +1,57 @@
+[SENDER] connected to 127.0.0.1:9001
+[SENDER] window=1 case=continuous_bad_frames blobs=8 bytes=205
+[SENDER] window=2 case=continuous_bad_frames blobs=8 bytes=182
+[SENDER] window=3 case=continuous_bad_frames blobs=8 bytes=267
+[SENDER] window=4 case=continuous_bad_frames blobs=8 bytes=228
+[SENDER] window=5 case=continuous_bad_frames blobs=8 bytes=284
+[SENDER] window=6 case=continuous_bad_frames blobs=8 bytes=217
+[SENDER] window=7 case=continuous_bad_frames blobs=8 bytes=173
+[SENDER] window=8 case=continuous_bad_frames blobs=8 bytes=195
+[SENDER] window=9 case=continuous_bad_frames blobs=8 bytes=253
+[SENDER] window=10 case=continuous_bad_frames blobs=8 bytes=233
+[SENDER] window=11 case=continuous_bad_frames blobs=8 bytes=294
+[SENDER] window=12 case=continuous_bad_frames blobs=8 bytes=225
+[SENDER] window=13 case=continuous_bad_frames blobs=8 bytes=226
+[SENDER] window=14 case=continuous_bad_frames blobs=8 bytes=353
+[SENDER] window=15 case=continuous_bad_frames blobs=8 bytes=180
+[SENDER] window=16 case=continuous_bad_frames blobs=8 bytes=263
+[SENDER] window=17 case=continuous_bad_frames blobs=8 bytes=223
+[SENDER] window=18 case=continuous_bad_frames blobs=8 bytes=236
+[SENDER] window=19 case=continuous_bad_frames blobs=8 bytes=295
+[SENDER] window=20 case=continuous_bad_frames blobs=8 bytes=230
+[SENDER] window=21 case=continuous_bad_frames blobs=8 bytes=210
+[SENDER] window=22 case=continuous_bad_frames blobs=8 bytes=201
+[SENDER] window=23 case=continuous_bad_frames blobs=8 bytes=254
+[SENDER] window=24 case=continuous_bad_frames blobs=8 bytes=258
+[SENDER] window=25 case=continuous_bad_frames blobs=8 bytes=159
+[SENDER] window=26 case=continuous_bad_frames blobs=8 bytes=207
+[SENDER] window=27 case=continuous_bad_frames blobs=8 bytes=269
+[SENDER] window=28 case=continuous_bad_frames blobs=8 bytes=241
+[SENDER] window=29 case=continuous_bad_frames blobs=8 bytes=236
+[SENDER] window=30 case=continuous_bad_frames blobs=8 bytes=195
+[SENDER] window=31 case=continuous_bad_frames blobs=8 bytes=251
+[SENDER] window=32 case=continuous_bad_frames blobs=8 bytes=248
+[SENDER] window=33 case=continuous_bad_frames blobs=8 bytes=243
+[SENDER] window=34 case=continuous_bad_frames blobs=8 bytes=312
+[SENDER] window=35 case=continuous_bad_frames blobs=8 bytes=222
+[SENDER] window=36 case=continuous_bad_frames blobs=8 bytes=222
+[SENDER] window=37 case=continuous_bad_frames blobs=8 bytes=247
+[SENDER] window=38 case=continuous_bad_frames blobs=8 bytes=212
+[SENDER] window=39 case=continuous_bad_frames blobs=8 bytes=170
+[SENDER] window=40 case=continuous_bad_frames blobs=8 bytes=261
+[SENDER] window=41 case=continuous_bad_frames blobs=8 bytes=303
+[SENDER] window=42 case=continuous_bad_frames blobs=8 bytes=159
+[SENDER] window=43 case=continuous_bad_frames blobs=8 bytes=253
+[SENDER] window=44 case=continuous_bad_frames blobs=8 bytes=181
+[SENDER] window=45 case=continuous_bad_frames blobs=8 bytes=242
+[SENDER] window=46 case=continuous_bad_frames blobs=8 bytes=286
+[SENDER] window=47 case=continuous_bad_frames blobs=8 bytes=226
+[SENDER] window=48 case=continuous_bad_frames blobs=8 bytes=320
+[SENDER] window=49 case=continuous_bad_frames blobs=8 bytes=292
+[SENDER] window=50 case=continuous_bad_frames blobs=8 bytes=258
+[SENDER] window=51 case=continuous_bad_frames blobs=8 bytes=272
+[SENDER] window=52 case=continuous_bad_frames blobs=8 bytes=264
+[SENDER] connection error: ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+[SENDER] connection error: ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+[SENDER] connection error: ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+[SENDER] connection error: ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。

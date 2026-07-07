@@ -1,0 +1,13 @@
+[LOG] Session log: C:\Users\linzh\Desktop\Final_Project\Communication_module\session_logs\pc_uart_ai_session_20260605_150947.log
+[PC] Python executable: C:\Users\linzh\yolo_mvp\venv\Scripts\python.exe
+[AI] importing modules... please wait
+[AI] import finished in 7.5s
+[AI] loading model... please wait
+[AI] loaded model in 0.1s: C:\Users\linzh\Desktop\Final_Project\runs_mvp\insect_det_v7_mvp3\weights\best.pt
+Traceback (most recent call last):
+  File "C:\Users\linzh\Desktop\Final_Project\Communication_module\pc_ai_uart_service_version2.py", line 936, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\linzh\Desktop\Final_Project\Communication_module\pc_ai_uart_service_version2.py", line 778, in main
+    raise RuntimeError("[PC] 未检测到可用串口（CH340/CH341）")
+RuntimeError: [PC] 未检测到可用串口（CH340/CH341）
