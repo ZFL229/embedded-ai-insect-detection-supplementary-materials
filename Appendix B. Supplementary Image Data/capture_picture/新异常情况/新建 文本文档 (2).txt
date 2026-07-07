@@ -1,0 +1,45 @@
+[PC] Auto selected serial port: COM9
+[PC] Opened COM9 @ 115200
+[PC] Save dir: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=4096, buffer=4337
+[PC] RX bytes=4096, buffer=4278
+[PC] RX bytes=4096, buffer=4219
+[PC] RX bytes=4096, buffer=4160
+[PC] RX bytes=4096, buffer=4101
+[PC] RX bytes=1003, buffer=1226
+[PC] IMAGE COMPLETE: img_id=1, chunks=225, bytes=57466
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_1_20260529_171628.jpg
+[PC_ACCOUNT] img_id=1 pc_received_len=57466 saved_file_size=57466
+[PC] Waiting for TX_DONE...
+[CAP_EVT] img_id=1 done=1 error=0 timeout=0 soi=0 eoi=57464 jpg_len=57466
+[MCU_ACCOUNT] img_id=1 capture_len=57466 tx_len=57466 tx_status=0 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=57464
+[ACCOUNT] img_id=1 capture_len=57466 tx_len=57466 pc_received_len=57466 saved_file_size=57466 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=3536, buffer=3636
+[PC] timeout drop img_id=2
+[PC] Serial closed
