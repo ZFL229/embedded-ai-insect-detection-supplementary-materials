@@ -1,0 +1,269 @@
+[PC] Auto selected serial port: COM7
+[PC] Opened COM7 @ 115200
+[PC] Save dir: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=1630, buffer=1653
+[PC] IMAGE COMPLETE: img_id=1, chunks=139, bytes=35335
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_1_20260515_155351.jpg
+[PC_ACCOUNT] img_id=1 pc_received_len=35335 saved_file_size=35335
+[PC] Waiting for TX_DONE...
+[CAP_EVT] img_id=1 done=1 error=0 timeout=0 soi=0 eoi=35333 jpg_len=35335
+[MCU_ACCOUNT] img_id=1 capture_len=35335 tx_len=35335 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=35333
+[ACCOUNT] img_id=1 capture_len=35335 tx_len=35335 pc_received_len=35335 saved_file_size=35335 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] Serial closed
+Traceback (most recent call last):
+  File "c:\Users\linzh\Desktop\Final_Project\Communication_module\pc_ai_uart_service_version2.py", line 440, in <module>
+    main()
+    ~~~~^^
+  File "c:\Users\linzh\Desktop\Final_Project\Communication_module\pc_ai_uart_service_version2.py", line 382, in main
+    wait_for_mcu_standby_and_send_ready(ser)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\linzh\Desktop\Final_Project\Communication_module\pc_ai_uart_service_version2.py", line 270, in wait_for_mcu_standby_and_send_ready
+    data = ser.read(128)
+  File "C:\python\Lib\site-packages\serial\serialwin32.py", line 295, in read
+    raise SerialException("GetOverlappedResult failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: GetOverlappedResult failed (PermissionError(13, '拒绝访问。', None, 5))
+PS C:\Users\linzh> & C:/python/python.exe c:/Users/linzh/Desktop/Final_Project/Communication_module/pc_ai_uart_service_version2.py
+[PC] Auto selected serial port: COM7
+[PC] Opened COM7 @ 115200
+[PC] Save dir: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=4096, buffer=4337
+[PC] RX bytes=4096, buffer=4278
+[PC] RX bytes=4096, buffer=4219
+[PC] RX bytes=4096, buffer=4160
+[PC] RX bytes=4096, buffer=4101
+[PC] RX bytes=4096, buffer=4319
+[PC] RX bytes=4096, buffer=4260
+[PC] RX bytes=4096, buffer=4201
+[PC] RX bytes=3483, buffer=3529
+[PC] IMAGE COMPLETE: img_id=1, chunks=278, bytes=71133
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_1_20260515_155433.jpg
+[PC_ACCOUNT] img_id=1 pc_received_len=71133 saved_file_size=71133
+[PC] Waiting for TX_DONE...
+[CAP_EVT] img_id=1 done=1 error=0 timeout=0 soi=0 eoi=71131 jpg_len=71133
+[MCU_ACCOUNT] img_id=1 capture_len=71133 tx_len=71133 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=71131
+[ACCOUNT] img_id=1 capture_len=71133 tx_len=71133 pc_received_len=71133 saved_file_size=71133 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=4096, buffer=4337
+[PC] RX bytes=4096, buffer=4278
+[PC] RX bytes=4096, buffer=4219
+[PC] RX bytes=4096, buffer=4160
+[PC] RX bytes=4096, buffer=4101
+[PC] RX bytes=4096, buffer=4319
+[PC] RX bytes=4096, buffer=4260
+[PC] RX bytes=4096, buffer=4201
+[PC] RX bytes=4096, buffer=4142
+[PC] RX bytes=2217, buffer=2481
+[PC] IMAGE COMPLETE: img_id=2, chunks=289, bytes=73732
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_2_20260515_155451.jpg
+[PC_ACCOUNT] img_id=2 pc_received_len=73732 saved_file_size=73732
+[PC] Waiting for TX_DONE...
+[CAP_EVT] img_id=2 done=1 error=0 timeout=0 soi=0 eoi=73730 jpg_len=73732
+[MCU_ACCOUNT] img_id=2 capture_len=73732 tx_len=73732 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=73730
+[ACCOUNT] img_id=2 capture_len=73732 tx_len=73732 pc_received_len=73732 saved_file_size=73732 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=4096, buffer=4337
+[PC] RX bytes=4096, buffer=4278
+[PC] RX bytes=4096, buffer=4219
+[PC] RX bytes=4096, buffer=4160
+[PC] RX bytes=4096, buffer=4101
+[PC] RX bytes=4096, buffer=4319
+[PC] RX bytes=4096, buffer=4260
+[PC] RX bytes=4096, buffer=4201
+[PC] RX bytes=1340, buffer=1386
+[PC] IMAGE COMPLETE: img_id=3, chunks=271, bytes=69137
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_3_20260515_155513.jpg
+[PC_ACCOUNT] img_id=3 pc_received_len=69137 saved_file_size=69137
+[PC] Waiting for TX_DONE...
+[CAP_EVT] img_id=3 done=1 error=0 timeout=0 soi=0 eoi=69135 jpg_len=69137
+[MCU_ACCOUNT] img_id=3 capture_len=69137 tx_len=69137 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=69135
+[ACCOUNT] img_id=3 capture_len=69137 tx_len=69137 pc_received_len=69137 saved_file_size=69137 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] IMAGE COMPLETE: img_id=4, chunks=104, bytes=26404
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_4_20260515_155609.jpg
+[PC_ACCOUNT] img_id=4 pc_received_len=26404 saved_file_size=26404
+[PC] Waiting for TX_DONE...
+[PC] END_HANDSHAKE RX: b'UNT] img_id=4 capture_len=26404 tx_len=26404 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop='
+[PC] END_HANDSHAKE RX: b'0 soi=0 eoi=26402\r\nTX_DONE\r\n'
+[CAP_EVT] img_id=4 done=1 error=0 timeout=0 soi=0 eoi=26402 jpg_len=26404
+[MCU_ACCOUNT] img_id=4 capture_len=26404 tx_len=26404 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=26402
+[ACCOUNT] img_id=4 capture_len=26404 tx_len=26404 pc_received_len=26404 saved_file_size=26404 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=4096, buffer=4337
+[PC] RX bytes=4096, buffer=4278
+[PC] RX bytes=4096, buffer=4219
+[PC] RX bytes=4096, buffer=4160
+[PC] RX bytes=4096, buffer=4101
+[PC] RX bytes=3894, buffer=4117
+[PC] IMAGE COMPLETE: img_id=5, chunks=235, bytes=60159
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_5_20260515_155631.jpg
+[PC_ACCOUNT] img_id=5 pc_received_len=60159 saved_file_size=60159
+[PC] Waiting for TX_DONE...
+[CAP_EVT] img_id=5 done=1 error=0 timeout=0 soi=0 eoi=60157 jpg_len=60159
+[MCU_ACCOUNT] img_id=5 capture_len=60159 tx_len=60159 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=60157
+[ACCOUNT] img_id=5 capture_len=60159 tx_len=60159 pc_received_len=60159 saved_file_size=60159 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=4096, buffer=4337
+[PC] RX bytes=4096, buffer=4278
+[PC] RX bytes=4096, buffer=4219
+[PC] RX bytes=4096, buffer=4160
+[PC] RX bytes=4096, buffer=4101
+[PC] RX bytes=4096, buffer=4319
+[PC] RX bytes=2193, buffer=2357
+[PC] IMAGE COMPLETE: img_id=6, chunks=244, bytes=62365
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_6_20260515_155654.jpg
+[PC_ACCOUNT] img_id=6 pc_received_len=62365 saved_file_size=62365
+[PC] Waiting for TX_DONE...
+[CAP_EVT] img_id=6 done=1 error=0 timeout=0 soi=0 eoi=62363 jpg_len=62365
+[MCU_ACCOUNT] img_id=6 capture_len=62365 tx_len=62365 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=62363
+[ACCOUNT] img_id=6 capture_len=62365 tx_len=62365 pc_received_len=62365 saved_file_size=62365 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
+[PC] HANDSHAKE RX: b'STANDBY\r\n'
+[PC] STANDBY received
+[PC] READY sent
+[PC] Start receiving one image...
+[PC] RX bytes=4096, buffer=4096
+[PC] RX bytes=4096, buffer=4314
+[PC] RX bytes=4096, buffer=4255
+[PC] RX bytes=4096, buffer=4196
+[PC] RX bytes=4096, buffer=4137
+[PC] RX bytes=4096, buffer=4355
+[PC] RX bytes=4096, buffer=4296
+[PC] RX bytes=4096, buffer=4237
+[PC] RX bytes=4096, buffer=4178
+[PC] RX bytes=4096, buffer=4119
+[PC] RX bytes=4096, buffer=4337
+[PC] RX bytes=4096, buffer=4278
+[PC] RX bytes=4096, buffer=4219
+[PC] RX bytes=4096, buffer=4160
+[PC] RX bytes=4096, buffer=4101
+[PC] RX bytes=4096, buffer=4319
+[PC] RX bytes=853, buffer=1017
+[PC] IMAGE COMPLETE: img_id=7, chunks=239, bytes=61130
+[PC] saved: C:\Users\linzh\Desktop\Final_Project\Communication_module\reassembled_output\img_7_20260515_155717.jpg
+[PC_ACCOUNT] img_id=7 pc_received_len=61130 saved_file_size=61130
+[PC] Waiting for TX_DONE...
+[CAP_EVT] img_id=7 done=1 error=0 timeout=0 soi=0 eoi=61128 jpg_len=61130
+[MCU_ACCOUNT] img_id=7 capture_len=61130 tx_len=61130 mode=1 wait=1 timeout=0 done_bd=0 err_bd=0 done_ad=1 err_ad=0 done_stop=1 err_stop=0 soi=0 eoi=61128
+[ACCOUNT] img_id=7 capture_len=61130 tx_len=61130 pc_received_len=61130 saved_file_size=61130 result=OK
+[PC] TX_DONE received
+[PC] DONE_ACK sent
+[PC] Transfer ended, waiting for next STANDBY...
+[PC] Waiting for MCU STANDBY...
